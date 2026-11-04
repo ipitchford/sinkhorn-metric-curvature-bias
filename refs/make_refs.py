@@ -10,7 +10,7 @@ tex = (R / 'manuscript.tex').read_text()
 items = re.findall(r'\\bibitem\{([^}]+)\}(.*)', tex)
 def esc(s): return re.sub(r'(?<!\\)([&%#_])', r'\\\1', ' '.join(str(s).split()))
 def entry(typ, key, fields, src):
-    return f'% Source: {src}\n@{typ}{{{key},\n' + ',\n'.join(f'  {k} = {{{esc(v)}}}' for k, v in fields if v) + '\n}\n\n'
+    return f'% Source: {src}\n@{typ}{{{key},\n' + ',\n'.join(f'  {k} = {{{esc(v) if k not in ("doi", "url", "eprint") else v}}}' for k, v in fields if v) + '\n}\n\n'
 ns = {'a': 'http://www.w3.org/2005/Atom'}
 arx = {}
 for e in ET.parse(REC / 'arxiv_records.xml').getroot().findall('a:entry', ns):
@@ -22,7 +22,7 @@ for key, rest in items:
         at = json.loads((REC / f'datacite_{d.group(1).split("/")[1]}.json').read_text())  # CSL-JSON from doi.org (DataCite)
         if at['DOI'].lower() != d.group(1).lower(): sys.exit('DOI mismatch ' + key)
         out.append(entry('misc', key, [('author', 'Anonymous'), ('title', at['title']), ('howpublished', 'Evidence Press research release; Zenodo'),
-            ('version', at.get('version')), ('year', at['issued']['date-parts'][0][0]), ('doi', at['DOI'])], f'DataCite (CSL-JSON), doi:{at["DOI"]}'))
+            ('version', at.get('version')), ('year', at['issued']['date-parts'][0][0]), ('doi', d.group(1))], f'DataCite (CSL-JSON), doi:{at["DOI"]}'))
     elif d:
         m = json.loads((REC / f'crossref_{d.group(1).replace("/", "_")}.json').read_text()); m = m.get('message', m)
         if m['DOI'].lower() != d.group(1).lower(): sys.exit('DOI mismatch ' + key)
