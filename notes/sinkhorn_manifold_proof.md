@@ -1,6 +1,6 @@
 # Fixed-cost Sinkhorn metric limit on closed embedded manifolds
 
-Research proof notes, 1 November 2026. These are original derivations in this session; literature checking is separate. The main unresolved target is the rigorous continuous-density limit proposed in Lavenant–Luckhardt–Mordant–Schmitzer–Tamanini (2025/2026), §4.4, equation (35). Mordant–Xu (September 2026) settle moving finite supports and explicitly leave densities at a formal level.
+Research proof notes, 1 November 2026. These are original derivations in this session; literature checking is separate. The main open target is the rigorous continuous-density limit proposed in Lavenant–Luckhardt–Mordant–Schmitzer–Tamanini (2025/2026), §4.4, equation (35). Mordant–Xu (September 2026) settle moving finite supports and explicitly leave densities at a formal level.
 
 ## 1. Statement and conventions
 
@@ -417,7 +417,7 @@ For cross terms use polarisation. The result is uniform with derivatives over sm
 - Lavenant, H., Luckhardt, J., Mordant, G., Schmitzer, B., & Tamanini, L. The Riemannian geometry of Sinkhorn divergences. Annales de l'Institut Henri Poincare C 43 (2026), 1079–1144. https://doi.org/10.4171/AIHPC/165 ; https://arxiv.org/abs/2405.04987 . Full PDF read, especially §4.4, equation (35).
 - Mordant, G., & Xu, L. (2026). Convergence of the Sinkhorn Riemannian metric for finitely supported measures. https://arxiv.org/abs/2609.14651 . Full PDF read, especially introduction and §3.3.
 - Wormell, C. L., & Reich, S. (2021). Spectral convergence of diffusion maps: Improved error bounds and an alternative normalization. SIAM Journal on Numerical Analysis. https://doi.org/10.1137/20M1344093 ; https://arxiv.org/abs/2006.02037 . Full PDF read, especially Theorem 3.3, Theorem 3.5, Proposition 3.6. These give a related periodised-heat-kernel torus result, not the present fixed-cost proof.
-- Marshall, N. F., & Coifman, R. R. (2019). Manifold learning with bi-stochastic kernels. IMA Journal of Applied Mathematics 84(3), 455–482. https://academic.oup.com/imamat/article-abstract/84/3/455/5289465 . Abstract and indexed full-text formulas inspected; original full PDF still needed for exact comparison.
+- Marshall, N. F., & Coifman, R. R. (2019). Manifold learning with bi-stochastic kernels. IMA Journal of Applied Mathematics 84(3), 455–482. https://academic.oup.com/imamat/article-abstract/84/3/455/5289465 . See `novelty/source_inspection.md` for the reading record.
 
 ## 11. Boundaries
 

@@ -1,134 +1,144 @@
 {
-  "title": "Extrinsic curvature bias in the small-regularisation limit of Sinkhorn metrics",
-  "upload_type": "publication",
-  "publication_type": "preprint",
-  "description": "<p><strong>Unrefereed research candidate.</strong> Entropic (Sinkhorn) optimal transport defines a local Riemannian metric on probability distributions, and as the regularisation &epsilon; tends to 0 it should recover Wasserstein geometry. This paper studies that limit for a smooth positive density on a closed manifold embedded in Euclidean space with the fixed ambient cost |x&minus;y|&sup2;.</p><p><strong>Results (proved).</strong> The Sinkhorn metric operator converges in operator norm on centred L&sup2; to the inverse weighted Laplacian, at rate O(&epsilon;<sup>1/2</sup>) in L&sup2; operator norm and O(&epsilon;) from H&sup2; to L&sup2; (Theorems 2.1 and 2.4; the sharp O(&epsilon;) operator-norm rate is open). For a smooth tangent h&mu; with A&phi; = h, A = &minus;&rho;<sup>&minus;1</sup>div(&rho;&nabla;), g<sub>&epsilon;</sub>(h&mu;,h&mu;) = &int;|&nabla;&phi;|&sup2;d&mu; &minus; (&epsilon;/4)&int;&lang;Q&nabla;&phi;,&nabla;&phi;&rang;d&mu; + O(&epsilon;&sup2;), with Q = &Sigma;<sub>&alpha;</sub>S<sub>&alpha;</sub>&sup2; built from the shape operators: the first bias is nonpositive and depends on the embedding, not only on the intrinsic geometry (chord shorter than arc). On the circle of radius R the eigenvalue 1/k&sup2; becomes (1/k&sup2;)(1 &minus; &epsilon;/(4R&sup2;)) to first order, and this rate is sharp. A positive correction built from the entropic inverse removes the term (Corollary 2.2); the expansions hold along smooth finite-dimensional density families (Theorem 2.3). Round spheres S<sup>m</sup> are solved exactly to second order (Proposition 9.1); a circle high-frequency family shows no operator-norm rate better than O(&epsilon;) is possible (Proposition 9.2); isometric embeddings give different biases (Proposition 10.1).</p><p>Credit and scope: the formal limit is due to Lavenant, Luckhardt, Mordant, Schmitzer and Tamanini (2025), made rigorous here in this setting; operator-level curvature expansions of Gaussian kernels (Smolyanov&ndash;von Weizs&auml;cker&ndash;Wittich; Liou&ndash;Lu; Guo) are credited, and Guo's full text could not be read, so the inverse-metric coefficient is described as not located in the sources we could read. Population densities only (no sampling rates), closed manifolds without boundary, positive smooth density; the correction needs known curvature; no global geodesic-distance convergence.</p><p>Archive: LaTeX source and PDF, bibliography from saved Crossref, arXiv and DataCite records, floating-point check scripts with outputs (replayed with and without python -O), symbolic sphere-coefficient check, figures, proof notes, prior-art ledger, rating-free review summary, CI and SHA-256 manifest. Assurance: internal AI-assisted review only (not human peer review, independent reproduction or formal verification); the scripts are floating-point checks, not certificates or proofs. Creator: Anonymous. Text CC0-1.0; code MIT.</p>",
-  "creators": [
-    {
-      "name": "Anonymous"
-    }
-  ],
-  "access_right": "open",
-  "license": "cc-zero",
-  "version": "0.1.0-candidate",
-  "publication_date": "2026-11-04",
-  "keywords": [
-    "Sinkhorn divergence",
-    "entropic optimal transport",
-    "Riemannian metric",
-    "Wasserstein geometry",
-    "shape operator",
-    "extrinsic curvature",
-    "embedded manifolds",
-    "small-regularisation limit"
-  ],
-  "notes": "Code (code/) is MIT; prose, manuscript, figures, data, records and all other files are CC0-1.0 (see LICENSE.md). Bibliographic records in refs/records/ are factual registry metadata.",
-  "related_identifiers": [
-    {
-      "identifier": "https://github.com/ipitchford/sinkhorn-metric-curvature-bias/tree/v0.1.0-candidate",
-      "relation": "isSupplementTo",
-      "scheme": "url"
-    },
-    {
-      "identifier": "https://evidencepress.org/releases/sinkhorn-metric-curvature-bias/",
-      "relation": "isDocumentedBy",
-      "scheme": "url"
-    },
-    {
-      "identifier": "10.4171/AIHPC/165",
-      "relation": "references",
-      "scheme": "doi"
-    },
-    {
-      "identifier": "10.2139/ssrn.7411565",
-      "relation": "references",
-      "scheme": "doi"
-    },
-    {
-      "identifier": "10.1016/j.acha.2006.04.006",
-      "relation": "references",
-      "scheme": "doi"
-    },
-    {
-      "identifier": "10.1093/imaiai/iaae026",
-      "relation": "references",
-      "scheme": "doi"
-    },
-    {
-      "identifier": "10.1093/imamat/hxy065",
-      "relation": "references",
-      "scheme": "doi"
-    },
-    {
-      "identifier": "10.1007/11503415_32",
-      "relation": "references",
-      "scheme": "doi"
-    },
-    {
-      "identifier": "10.1016/j.acha.2006.03.004",
-      "relation": "references",
-      "scheme": "doi"
-    },
-    {
-      "identifier": "10.1016/j.acha.2025.101803",
-      "relation": "references",
-      "scheme": "doi"
-    },
-    {
-      "identifier": "10.1137/20M1344093",
-      "relation": "references",
-      "scheme": "doi"
-    },
-    {
-      "identifier": "10.1007/BF02399203",
-      "relation": "references",
-      "scheme": "doi"
-    },
-    {
-      "identifier": "10.1007/978-3-642-25983-8",
-      "relation": "references",
-      "scheme": "doi"
-    },
-    {
-      "identifier": "10.5281/zenodo.23929617",
-      "relation": "references",
-      "scheme": "doi"
-    },
-    {
-      "identifier": "arXiv:2506.13238",
-      "relation": "references",
-      "scheme": "arxiv"
-    },
-    {
-      "identifier": "arXiv:math/0409155",
-      "relation": "references",
-      "scheme": "arxiv"
-    },
-    {
-      "identifier": "arXiv:2609.14651",
-      "relation": "references",
-      "scheme": "arxiv"
-    },
-    {
-      "identifier": "arXiv:2610.39850",
-      "relation": "references",
-      "scheme": "arxiv"
-    },
-    {
-      "identifier": "arXiv:2610.02007",
-      "relation": "references",
-      "scheme": "arxiv"
-    },
-    {
-      "identifier": "arXiv:2507.06161",
-      "relation": "references",
-      "scheme": "arxiv"
-    },
-    {
-      "identifier": "arXiv:math/0608522",
-      "relation": "references",
-      "scheme": "arxiv"
-    }
-  ],
-  "doi": "10.5281/zenodo.23940148"
+ "title": "Extrinsic curvature bias in the small-regularisation limit of Sinkhorn metrics",
+ "upload_type": "publication",
+ "publication_type": "preprint",
+ "description": "<p><strong>Unrefereed research candidate.</strong> Entropic (Sinkhorn) optimal transport defines a local Riemannian metric on probability distributions, and as the regularisation &epsilon; tends to 0 it should recover Wasserstein geometry. This paper studies that limit for a smooth positive density on a closed manifold embedded in Euclidean space with the fixed ambient cost |x&minus;y|&sup2;.</p><p><strong>Results (proved).</strong> The Sinkhorn metric operator converges in operator norm on centred L&sup2; to the inverse weighted Laplacian, at rate O(&epsilon;<sup>1/2</sup>) in L&sup2; operator norm and O(&epsilon;) from H&sup2; to L&sup2; (Theorems 2.1 and 2.4; the sharp O(&epsilon;) operator-norm rate is open). For a smooth tangent h&mu; with A&phi; = h, A = &minus;&rho;<sup>&minus;1</sup>div(&rho;&nabla;), g<sub>&epsilon;</sub>(h&mu;,h&mu;) = &int;|&nabla;&phi;|&sup2;d&mu; &minus; (&epsilon;/4)&int;&lang;Q&nabla;&phi;,&nabla;&phi;&rang;d&mu; + O(&epsilon;&sup2;), with Q = &Sigma;<sub>&alpha;</sub>S<sub>&alpha;</sub>&sup2; built from the shape operators: the first bias is nonpositive and depends on the embedding, not only on the intrinsic geometry (chord shorter than arc). On the circle of radius R the eigenvalue 1/k&sup2; becomes (1/k&sup2;)(1 &minus; &epsilon;/(4R&sup2;)) to first order, and this rate is sharp. A positive correction built from the entropic inverse removes the term (Corollary 2.2); the expansions hold along smooth finite-dimensional density families (Theorem 2.3). Round spheres S<sup>m</sup> are solved exactly to second order (Proposition 9.1); a circle high-frequency family shows no operator-norm rate better than O(&epsilon;) is possible (Proposition 9.2); isometric embeddings give different biases (Proposition 10.1).</p><p>Credit and scope: the formal limit is due to Lavenant, Luckhardt, Mordant, Schmitzer and Tamanini (2025), made rigorous here in this setting. <strong>Guo (2026) already gives the tensor Q/16 (via his Theorem 1 and the Gauss equation) and the first sphere and circle bias, and the coefficient of the inverse formula then follows formally; this paper's contribution is the rigorous inverse-metric theorem, not discovery of the coefficient.</strong> Guo works pointwise with the row-normalised operator at uniform density; his paper has no Sinkhorn scaling, inverse, metric, operator-norm statement or nonuniform-density bias. Other operator-level expansions (Smolyanov&ndash;von Weizs&auml;cker&ndash;Wittich; Liou&ndash;Lu) are credited. Population densities only (no sampling rates), closed manifolds without boundary, positive smooth density; the correction needs known curvature; no global geodesic-distance convergence.</p><p><strong>Version 0.2.0-candidate</strong> corrects the comparison with prior work after Guo's paper was read completely. Version 0.1.0-candidate (doi:10.5281/zenodo.23940148) had said that paper was unread. No theorem, proof or numerical result changed; a comparison script is added.</p><p>Archive: LaTeX source and PDF, bibliography from saved Crossref, arXiv and DataCite records, floating-point check scripts with outputs (replayed with and without python -O), symbolic sphere-coefficient check, figures, proof notes, prior-art ledger, rating-free review summary, CI and SHA-256 manifest. Assurance: internal AI-assisted review only (not human peer review, independent reproduction or formal verification); the scripts are floating-point checks, not certificates or proofs. Creator: Anonymous. Text CC0-1.0; code MIT.</p>",
+ "creators": [
+  {
+   "name": "Anonymous"
+  }
+ ],
+ "access_right": "open",
+ "license": "cc-zero",
+ "version": "0.2.0-candidate",
+ "publication_date": "2026-11-04",
+ "keywords": [
+  "Sinkhorn divergence",
+  "entropic optimal transport",
+  "Riemannian metric",
+  "Wasserstein geometry",
+  "shape operator",
+  "extrinsic curvature",
+  "embedded manifolds",
+  "small-regularisation limit"
+ ],
+ "notes": "Code (code/) is MIT; prose, manuscript, figures, data, records and all other files are CC0-1.0 (see LICENSE.md). Bibliographic records in refs/records/ are factual registry metadata.",
+ "related_identifiers": [
+  {
+   "identifier": "https://github.com/ipitchford/sinkhorn-metric-curvature-bias/tree/v0.2.0-candidate",
+   "relation": "isSupplementTo",
+   "scheme": "url"
+  },
+  {
+   "identifier": "https://evidencepress.org/releases/sinkhorn-metric-curvature-bias/",
+   "relation": "isDocumentedBy",
+   "scheme": "url"
+  },
+  {
+   "identifier": "10.4171/AIHPC/165",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.2139/ssrn.7411565",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1016/j.acha.2006.04.006",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1093/imaiai/iaae026",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1093/imamat/hxy065",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1007/11503415_32",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1016/j.acha.2006.03.004",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1016/j.acha.2025.101803",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1137/20M1344093",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1007/BF02399203",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1007/978-3-642-25983-8",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.5281/zenodo.23929617",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "arXiv:2506.13238",
+   "relation": "references",
+   "scheme": "arxiv"
+  },
+  {
+   "identifier": "arXiv:math/0409155",
+   "relation": "references",
+   "scheme": "arxiv"
+  },
+  {
+   "identifier": "arXiv:2609.14651",
+   "relation": "references",
+   "scheme": "arxiv"
+  },
+  {
+   "identifier": "arXiv:2610.39850",
+   "relation": "references",
+   "scheme": "arxiv"
+  },
+  {
+   "identifier": "arXiv:2610.02007",
+   "relation": "references",
+   "scheme": "arxiv"
+  },
+  {
+   "identifier": "arXiv:2507.06161",
+   "relation": "references",
+   "scheme": "arxiv"
+  },
+  {
+   "identifier": "arXiv:math/0608522",
+   "relation": "references",
+   "scheme": "arxiv"
+  },
+  {
+   "identifier": "10.48550/arXiv.2610.36488",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.5281/zenodo.23940148",
+   "relation": "isNewVersionOf",
+   "scheme": "doi"
+  }
+ ],
+ "doi": "10.5281/zenodo.23955055"
 }

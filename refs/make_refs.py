@@ -13,7 +13,7 @@ def entry(typ, key, fields, src):
     return f'% Source: {src}\n@{typ}{{{key},\n' + ',\n'.join(f'  {k} = {{{esc(v) if k not in ("doi", "url", "eprint") else v}}}' for k, v in fields if v) + '\n}\n\n'
 ns = {'a': 'http://www.w3.org/2005/Atom'}
 arx = {}
-for e in ET.parse(REC / 'arxiv_records.xml').getroot().findall('a:entry', ns):
+for e in [x for f in ('arxiv_records.xml', 'arxiv_saidi_2610.36488.xml') for x in ET.parse(REC / f).getroot().findall('a:entry', ns)]:
     vid = e.find('a:id', ns).text.split('/abs/')[1]; arx[re.sub(r'v\d+$', '', vid)] = e
 out = ['% refs.bib: every reference of manuscript.tex, built by refs/make_refs.py from refs/records/ (retrieved 4 November 2026).\n\n']
 for key, rest in items:

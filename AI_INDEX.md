@@ -1,8 +1,8 @@
-# AI index: extrinsic curvature bias in the small-regularisation limit of Sinkhorn metrics (v0.1.0-candidate)
+# AI index: extrinsic curvature bias in the small-regularisation limit of Sinkhorn metrics (v0.2.0-candidate)
 
 Machine-oriented map of claims, evidence and limits. Human readers should start with [README.md](README.md) and the paper
 [extrinsic_curvature_sinkhorn_metrics.pdf](extrinsic_curvature_sinkhorn_metrics.pdf) (source [manuscript.tex](manuscript.tex)).
-DOI: https://doi.org/10.5281/zenodo.23940148 (concept DOI 10.5281/zenodo.23940147).
+DOI: https://doi.org/10.5281/zenodo.23955055 (concept DOI 10.5281/zenodo.23940147).
 
 ## Normalisation
 
@@ -24,7 +24,7 @@ On a circle or sphere of radius R, Q = R^{-2}. Exact claims and fingerprints: [p
 | C4 | Theorem 2.4 (quantified operator-norm rates): \|\|B_eps - A^{-1}\|\|_{H^2 -> L^2} <= C eps and \|\|B_eps - A^{-1}\|\|_{L^2 -> L^2} <= C eps^{1/2}; same for the corrected operator. Whether O(eps) holds in L^2 operator norm in general is OPEN (Remark 7.2) | Section 2, proof in Section 7 | proof; the sharp rate is open |
 | C5 | Lemma 3.1 (relative scaling stability): residual estimate for positive-kernel scaling without pointwise ratio bounds | Section 3 | proof |
 | C6 | Lemma 4.1 (gap): uniform spectral gap of I - P_eps of order eps on centred L^2, with uniform bounds | Section 4.3 | proof |
-| C7 | Lemma 5.1 (second-order tensor): T = Q/16 in the second-order term of the normalised transition operator; Proposition 5.2: P_eps = I - (eps/4) A + eps^2 (A^2/32 - A_Q/16) + O(eps^3) on smooth functions in every fixed spatial norm (equivalently log P_eps = -eps A/4 - eps^2 A_Q/16 + O(eps^3)). The operator-level structure is credited to prior Gaussian-kernel expansions | Section 5 | proof |
+| C7 | Lemma 5.1 (second-order tensor): T = Q/16 in the second-order term of the normalised transition operator; Proposition 5.2: P_eps = I - (eps/4) A + eps^2 (A^2/32 - A_Q/16) + O(eps^3) on smooth functions in every fixed spatial norm (equivalently log P_eps = -eps A/4 - eps^2 A_Q/16 + O(eps^3)). Guo's Theorem 1 with the Gauss equation already gives the tensor Q/16 (implied, not stated, by him; Remark 5.3); credited | Section 5 | proof |
 | C8 | Lemma 6.1 (uniform gradient bound) and Proposition 6.2 (operator-norm convergence of the metric operator) | Section 6, Section 6.1 | proof |
 | C9 | Lemma 7.1 (uniform Sobolev remainder), the input to Theorem 2.4 | Section 7 | proof |
 | C10 | Lemma 8.1 (parameter derivatives and residual upgrading) | Section 8 | proof |
@@ -46,6 +46,7 @@ not interval certificates. Each exits non-zero on any failed check, also under `
 - [code/sympy_sphere_coefficients.py](code/sympy_sphere_coefficients.py): symbolic sphere coefficients. Output [results/sympy_sphere_coefficients.json](results/sympy_sphere_coefficients.json).
 - [code/check_spheres_tori.py](code/check_spheres_tori.py): spheres S^1-S^4 at 60 digits, Funk-Hecke check, flat torus in R^4, equal-length ellipse vs circle, circle operator-norm evidence. Output [results/check_spheres_tori.json](results/check_spheres_tori.json).
 - [code/check_torus_revolution.py](code/check_torus_revolution.py): torus of revolution, nonconstant density. Output [results/check_torus_revolution.json](results/check_torus_revolution.json).
+- [code/check_guo_comparison.py](code/check_guo_comparison.py): Guo's Gaussian moments versus the sphere, product-torus, ellipse and torus-of-revolution coefficients, and the first-order identity for every dimension. Output [results/check_guo_comparison.json](results/check_guo_comparison.json).
 - [code/check_ellipse_bias.py](code/check_ellipse_bias.py): nonuniform ellipse at 768 and 1536 nodes. Outputs [results/ellipse_bias_results.json](results/ellipse_bias_results.json), [results/ellipse_bias_refinement_768.json](results/ellipse_bias_refinement_768.json), [results/ellipse_bias_refinement_1536.json](results/ellipse_bias_refinement_1536.json).
 - [code/independent_circle_check.py](code/independent_circle_check.py), [code/independent_ellipse_check.py](code/independent_ellipse_check.py): independent implementations. Outputs [results/independent_circle_check.json](results/independent_circle_check.json), [results/independent_ellipse_check.json](results/independent_ellipse_check.json).
 - [code/make_figures.py](code/make_figures.py): [figures/sinkhorn_curvature_validation.pdf](figures/sinkhorn_curvature_validation.pdf) and [results/figure_validation_summary.json](results/figure_validation_summary.json).
@@ -61,5 +62,4 @@ curvature. The sharp O(eps) L^2 operator-norm rate is open on general manifolds.
 
 Internal AI-assisted review only: [review/REVIEW_SUMMARY.md](review/REVIEW_SUMMARY.md). Prior art and priority boundary:
 [prior_art/novelty_report.md](prior_art/novelty_report.md), [prior_art/source_inspection.md](prior_art/source_inspection.md).
-Guo (SSRN 2026, doi:10.2139/ssrn.7411565) could be read only at abstract level; the inverse-metric coefficient was not located
-in the sources we could read. No human peer review, independent reproduction or formal verification. Bibliography: [refs.bib](refs.bib).
+Guo (SSRN 2026, doi:10.2139/ssrn.7411565) was read completely. His Theorem 1 with the Gauss equation gives the tensor Q/16, and his Example 3 with Corollary 1 gives the first sphere and circle bias; the coefficient of the inverse formula follows formally. The contribution here is the rigorous inverse-metric theorem (exact scaling and singular resolvent at arbitrary positive density), not the coefficient. Correction history: [VERSIONS.md](VERSIONS.md). No human peer review, independent reproduction or formal verification. Bibliography: [refs.bib](refs.bib).

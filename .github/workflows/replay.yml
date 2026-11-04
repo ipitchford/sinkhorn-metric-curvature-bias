@@ -5,7 +5,7 @@ on:
   pull_request:
 jobs:
   checks:
-    name: Manifest and the seven check scripts on a copy (normal and -O)
+    name: Manifest and the eight check scripts on a copy (normal and -O)
     runs-on: ubuntu-latest
     timeout-minutes: 30
     env:
@@ -26,7 +26,7 @@ jobs:
           for M in normal opt; do
             cp -R . "$RUNNER_TEMP/$M"; cd "$RUNNER_TEMP/$M"
             F=""; if [ "$M" = opt ]; then F="-O"; fi
-            for s in sympy_sphere_coefficients check_spheres_tori check_torus_revolution check_ellipse_bias independent_circle_check independent_ellipse_check make_figures; do
+            for s in sympy_sphere_coefficients check_spheres_tori check_torus_revolution check_guo_comparison check_ellipse_bias independent_circle_check independent_ellipse_check make_figures; do
               echo "== $M $s"; python $F -I -B code/$s.py > "$RUNNER_TEMP/$M-$s.log" 2>&1 || { tail -40 "$RUNNER_TEMP/$M-$s.log"; exit 1; }
             done
             cd "$GITHUB_WORKSPACE"

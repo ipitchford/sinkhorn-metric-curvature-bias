@@ -1,6 +1,6 @@
 {
  "schemaVersion": "1.0",
- "provenance": "Compiled 4 November 2026 for release 0.1.0-candidate from the dated formula-first prior-art search of 1 November 2026 (prior_art/), the priority and corpus checks of 4 November 2026 (prior_art/novelty_report.md addendum) and the reference retrieval for the bibliography. It documents the scrutiny performed, not historical priority. No new priority search was run at release preparation.",
+ "provenance": "Compiled 4 November 2026 for release 0.1.0-candidate and updated for release 0.2.0-candidate (Guo 2026 read completely; prior_art/novelty_report.md addendum) from the dated formula-first prior-art search of 1 November 2026 (prior_art/), the priority and corpus checks of 4 November 2026 (prior_art/novelty_report.md addendum) and the reference retrieval for the bibliography. It documents the scrutiny performed, not historical priority. No new priority search was run at release preparation.",
  "contributionMap": [
   {
    "claim": "Theorem 2.1 and Proposition 6.2: for fixed cost |x-y|^2 on a closed embedded manifold with smooth positive density, the Sinkhorn metric operator converges in operator norm to the inverse weighted Laplacian, with first correction -(eps/4) A^{-1} A_Q A^{-1}, Q the sum of squared shape operators.",
@@ -14,7 +14,7 @@
     },
     {
      "date": "2026-11-04",
-     "corpus": "priority re-check of Guo (SSRN 2026; abstract only, full text HTTP 403), Liou-Lu (arXiv 2506.13238, read in full), Schubr author-posted heat-kernel Sinkhorn preprints; Evidence Press live feed (239 items) and earlier batch folders; GitHub issues and discussions (gh search)",
+     "corpus": "priority re-check of Guo (SSRN 2026, read completely; see sourcesReadInFull), Liou-Lu (arXiv 2506.13238, read in full), Schubr author-posted heat-kernel Sinkhorn preprints; Evidence Press live feed (239 items) and earlier batch folders; GitHub issues and discussions (gh search)",
      "query": "intrinsic extrinsic bias diffusion operators; Gaussian integral operators submanifolds; heat-kernel Sinkhorn metric bias; Sinkhorn metric curvature"
     },
     {
@@ -23,7 +23,7 @@
      "query": "registry records for every bibliography entry"
     }
    ],
-   "closestPriorWork": "Lavenant, Luckhardt, Mordant, Schmitzer and Tamanini 2025 (formal limit, made rigorous here); operator-level Gaussian expansions with extrinsic terms (Smolyanov-von Weizsacker-Wittich 2004; Liou-Lu 2025; Guo 2026, abstract only), credited; Schubr 2026 heat-kernel analogue with an intrinsic cost",
+   "closestPriorWork": "Lavenant, Luckhardt, Mordant, Schmitzer and Tamanini 2025 (formal limit, made rigorous here); operator-level Gaussian expansions with extrinsic terms (Smolyanov-von Weizsacker-Wittich 2004; Liou-Lu 2025; Guo 2026), credited; Guo Theorem 1 with the Gauss equation gives the tensor Q/16 and the coefficient of the inverse formula then follows formally, so only the rigorous theorem is claimed; Schubr 2026 heat-kernel analogue with an intrinsic cost",
    "verdict": "partially-known-cited"
   },
   {
@@ -38,7 +38,7 @@
     },
     {
      "date": "2026-11-04",
-     "corpus": "priority re-check of Guo (SSRN 2026; abstract only, full text HTTP 403), Liou-Lu (arXiv 2506.13238, read in full), Schubr author-posted heat-kernel Sinkhorn preprints; Evidence Press live feed (239 items) and earlier batch folders; GitHub issues and discussions (gh search)",
+     "corpus": "priority re-check of Guo (SSRN 2026, read completely; see sourcesReadInFull), Liou-Lu (arXiv 2506.13238, read in full), Schubr author-posted heat-kernel Sinkhorn preprints; Evidence Press live feed (239 items) and earlier batch folders; GitHub issues and discussions (gh search)",
      "query": "intrinsic extrinsic bias diffusion operators; Gaussian integral operators submanifolds; heat-kernel Sinkhorn metric bias; Sinkhorn metric curvature"
     }
    ],
@@ -57,7 +57,7 @@
     },
     {
      "date": "2026-11-04",
-     "corpus": "priority re-check of Guo (SSRN 2026; abstract only, full text HTTP 403), Liou-Lu (arXiv 2506.13238, read in full), Schubr author-posted heat-kernel Sinkhorn preprints; Evidence Press live feed (239 items) and earlier batch folders; GitHub issues and discussions (gh search)",
+     "corpus": "priority re-check of Guo (SSRN 2026, read completely; see sourcesReadInFull), Liou-Lu (arXiv 2506.13238, read in full), Schubr author-posted heat-kernel Sinkhorn preprints; Evidence Press live feed (239 items) and earlier batch folders; GitHub issues and discussions (gh search)",
      "query": "intrinsic extrinsic bias diffusion operators; Gaussian integral operators submanifolds; heat-kernel Sinkhorn metric bias; Sinkhorn metric curvature"
     }
    ],
@@ -76,7 +76,7 @@
     },
     {
      "date": "2026-11-04",
-     "corpus": "priority re-check of Guo (SSRN 2026; abstract only, full text HTTP 403), Liou-Lu (arXiv 2506.13238, read in full), Schubr author-posted heat-kernel Sinkhorn preprints; Evidence Press live feed (239 items) and earlier batch folders; GitHub issues and discussions (gh search)",
+     "corpus": "priority re-check of Guo (SSRN 2026, read completely; see sourcesReadInFull), Liou-Lu (arXiv 2506.13238, read in full), Schubr author-posted heat-kernel Sinkhorn preprints; Evidence Press live feed (239 items) and earlier batch folders; GitHub issues and discussions (gh search)",
      "query": "intrinsic extrinsic bias diffusion operators; Gaussian integral operators submanifolds; heat-kernel Sinkhorn metric bias; Sinkhorn metric curvature"
     }
    ],
@@ -109,16 +109,30 @@
   {
    "citation": "Liou and Lu, Asymptotic expansion of the Gaussian integral operators on Riemannian submanifolds of R^n, arXiv:2506.13238",
    "usedFor": "Operator-level extrinsic expansion credited",
-   "readWhat": "Full text",
+   "readWhat": "Complete paper",
    "date": "2026-11-04",
    "evidenceLocator": "manuscript Section 1; review/REVIEW_SUMMARY.md"
   },
   {
    "citation": "Schubr, Leading bias and positive correction of heat-kernel Sinkhorn metrics, and Sharp convergence of heat-kernel Sinkhorn metrics (Luminary Research Archive, Edition 2, 2026)",
    "usedFor": "Closest intrinsic-cost analogue, contrasted",
-   "readWhat": "Full text of both editions 2",
+   "readWhat": "Complete text of both editions 2",
    "date": "2026-11-04",
    "evidenceLocator": "manuscript Section 1"
+  },
+  {
+   "citation": "Guo, Intrinsic and extrinsic bias of diffusion operators: asymptotic expansion and kernel-dependent comparison, SSRN 2026, doi 10.2139/ssrn.7411565",
+   "usedFor": "Closest operator-level result; tensor Q/16 and first sphere and circle bias credited",
+   "readWhat": "Complete paper, 23 pages, including Appendix A",
+   "date": "2026-11-04",
+   "evidenceLocator": "manuscript Section 1 and Remark 5.3; prior_art/novelty_report.md addendum; code/check_guo_comparison.py"
+  },
+  {
+   "citation": "Saidi, Gunsilius and Mena, Second-order Sinkhorn geometry and sqrt(n)-inference, arXiv:2610.36488",
+   "usedFor": "Fixed-regularisation geometry, contrasted; not pre-empted",
+   "readWhat": "Introduction, assumptions, statements and remarks; whole paper searched; proofs not read line by line",
+   "date": "2026-11-04",
+   "evidenceLocator": "manuscript Section 1; prior_art/novelty_report.md addendum"
   }
  ],
  "limitationTriage": [
@@ -161,14 +175,12 @@
    "cheap": true
   },
   {
-   "limitation": "Priority holds only within a bounded search; Guo (SSRN 2026) full text could not be read.",
-   "closingQuestion": "Does Guo or other work already state the inverse-metric coefficient?",
-   "triedOrSearched": "Abstract read; SSRN routes returned HTTP 403; no arXiv copy; operator-level expansions credited; no author enquiry.",
-   "estimatedCost": "days",
-   "decision": "OPEN",
-   "cheap": false,
-   "reasonOpen": "Full text inaccessible; specialist review and correspondence are out of scope.",
-   "whyNotClosedNow": "Requires access to the full text or author enquiry."
+   "limitation": "Priority of the coefficient against Guo (SSRN 2026).",
+   "closingQuestion": "Does Guo or other work already give the inverse-metric coefficient?",
+   "triedOrSearched": "Guo read completely and compared theorem by theorem; his Theorem 1 gives the tensor and the inverse coefficient follows formally; code/check_guo_comparison.py confirms agreement.",
+   "estimatedCost": "1 day",
+   "decision": "CLOSED",
+   "cheap": true
   }
  ],
  "extensionScout": {

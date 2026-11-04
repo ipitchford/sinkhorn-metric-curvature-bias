@@ -1,8 +1,8 @@
 # Note added 4 November 2026: this target was frozen on 1 November 2026 and is kept as written.
 # The final manuscript supersedes 'no general quantitative operator-norm rate asserted':
 # Theorem 2.4 proves O(eps^{1/2}) in L2_0 operator norm and O(eps) from H^2 to L2; the sharp O(eps)
-# operator-norm rate is open. The operator-level extrinsic coefficient is credited to prior operator
-# expansions; the release claims only the inverse-metric (Sinkhorn metric) consequences.
+# operator-norm rate is open. Guo's Theorem 1 yields the tensor Q/16; the release claims the rigorous
+# inverse-metric theorem and its consequences, not the coefficient.
 target_id: fixed_cost_sinkhorn_extrinsic_bias
 search_date: 2026-11-01
 intended_contribution_unit: theorem

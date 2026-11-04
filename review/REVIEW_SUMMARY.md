@@ -1,6 +1,6 @@
 # Internal review summary
 
-**Paper:** *Extrinsic curvature bias in the small-regularisation limit of Sinkhorn metrics*. Author: Anonymous. Version 0.1.0-candidate.
+**Paper:** *Extrinsic curvature bias in the small-regularisation limit of Sinkhorn metrics*. Author: Anonymous. Version 0.2.0-candidate.
 **Status:** this is an unrefereed, AI-assisted research candidate. The review described here was internal to Evidence Press and was carried out by AI systems. It is not peer review.
 
 ## What was done
@@ -22,8 +22,8 @@
 
 ## Substantive objections and how they were handled
 
-- **Priority: Guo (SSRN 2026) and Liou–Lu.** This was the main objection. Guo, *Intrinsic and Extrinsic Bias of Diffusion Operators* (SSRN, doi:10.2139/ssrn.7411565), announces intrinsic and extrinsic bias expansions for radial-kernel diffusion generators at uniform density. Its full text could not be read: SSRN returned HTTP 403, and no other copy was found. It may therefore contain the raw operator-level extrinsic coefficient. Liou–Lu (arXiv 2506.13238) was read in full. It gives a general Gaussian expansion, but its only explicit curvature coefficient is a zeroth-order term in |H|² and scalar curvature.
-  - *Disposition:* the paper was repositioned. It now credits the operator-level intrinsic/extrinsic expansions to prior work: Smolyanov–von Weizsäcker–Wittich, Liou–Lu, Guo (on its abstract), Sule–Evans–Cameron, and the classical diffusion-maps papers of Coifman–Lafon, Singer and Hein–Audibert–von Luxburg. It states the structural fact log P_ε = −εA/4 − ε²A_Q/16 + O(ε³). It claims as new only the inverse-metric (Sinkhorn metric) consequences: the formula −(ε/4)A⁻¹A_Q A⁻¹ at arbitrary smooth positive density, with rigorous control of the exact scaling and the singular resolvent, and the results built on it. The inverse-metric statement is described as "not located in the sources we could read". The paper says explicitly that Guo's full text was unread. Historical priority is not asserted.
+- **Priority: Guo (SSRN 2026) and Liou–Lu.** This was the main objection. Guo, *Intrinsic and Extrinsic Bias of Diffusion Operators* (SSRN, doi:10.2139/ssrn.7411565), was read completely for this version. His Theorem 1 and Corollary 1 give a pointwise expansion of the row-normalised diffusion operator at uniform density; Example 3 gives the sphere. An independent audit confirmed by hand that his averages, with the contracted Gauss equation, give the tensor Q/16 for every closed manifold, that the tensor is density-free, and that his first-order terms agree for every dimension. His paper has no Sinkhorn scaling, inverse, resolvent, metric, operator-norm statement or nonuniform-density bias. Liou–Lu (arXiv 2506.13238) was read in full; it gives a general Gaussian expansion, and its only explicit curvature coefficient is a zeroth-order term in |H|² and scalar curvature.
+  - *Disposition:* the paper credits Guo for the tensor and the first sphere and circle bias, and says that the coefficient of the inverse formula follows formally from his expansion once the exact scaling has an expansion. It claims the rigorous inverse-metric theorem: control of the exact scaling and singular resolvent at an arbitrary positive density, and the results built on it. It does not claim discovery of the coefficient. Other operator-level work is credited too: Smolyanov–von Weizsäcker–Wittich, Liou–Lu, Sule–Evans–Cameron, and the classical diffusion-maps papers.
 - **Heat-kernel precedent.** The devil's advocate argued that recent author-posted heat-kernel Sinkhorn papers (Schubr, October 2026) already contain the same overall architecture, with an operator-norm rate.
   - *Disposition:* the paper now says this plainly and contrasts the two settings. It also proves a quantified rate (Theorem 2.4).
 - **No operator-norm rate.** The first draft proved operator-norm convergence with no rate.
@@ -40,6 +40,10 @@
   - *Disposition:* references were added. Every bibliography entry was copied from a Crossref, arXiv or DataCite record.
 - **Gaps found by the proof audit and the separate-model audit.** These were: a dropped support restriction and a uniform-injectivity step in Lemma 7.1; lower-order residual terms in the induction for Theorem 2.3; the constant in Proposition 10.1 holding only at a point, not on a neighbourhood; a wording slip about which curve "minimises" the bias; and a stale sentence saying no rate was proved.
   - *Disposition:* all of these were fixed before the final build.
+
+## Correction history
+
+Version 0.1.0-candidate (doi:10.5281/zenodo.23940148) said Guo's text could not be read and compared only with its abstract. The owner supplied the paper; it was read completely, and an independent audit checked the comparison. Version 0.2.0-candidate corrects the priority statements and adds Remark 5.3 and `code/check_guo_comparison.py`. Saidi et al. were also compared (statements read, whole paper searched): fixed ε on a closed ball with finite-smoothness costs, squared Euclidean cost excluded; no ε→0 limit, manifold or curvature term; not pre-empted. No theorem, proof or numerical result changed.
 
 ## Extensions added in revision
 
@@ -61,4 +65,4 @@
 - There was no human peer review.
 - No unaffiliated party has independently reproduced the work.
 - There was no formal (machine-checked) verification of the proofs. The scripts are floating-point and symbolic consistency checks, not proofs.
-- The prior-art search was bounded: English-language sources, public indexes, and no subscription databases. No enquiry was sent to any author, including Guo.
+- The prior-art search covered English-language sources and public indexes, with no subscription databases. No enquiry was sent to any author, including Guo.

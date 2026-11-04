@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/hWN5qXIZeJgs7EvzRUAmqxQhhmI</id>
+  <title>arXiv Query: search_query=&amp;id_list=2610.36488&amp;start=0&amp;max_results=10</title>
+  <updated>2026-11-04T09:19:23Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=10&amp;id_list=2610.36488" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+  <opensearch:totalResults>1</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2610.36488v1</id>
+    <title>Second-order Sinkhorn Geometry and $\sqrt{n}$-Inference</title>
+    <updated>2026-10-27T01:44:09Z</updated>
+    <link href="https://arxiv.org/abs/2610.36488v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.36488v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The Sinkhorn divergence, a debiased form of entropic optimal transport, has been widely used in various scientific disciplines due to its computational and statistical tractability. Unlike the Wasserstein distance, however, the Sinkhorn divergence is not a metric and it does not naturally admit a formal Riemannian structure. These properties are central to many applications of optimal transport methods that utilize interpolation, barycentric averaging, parallel transport or other geometric operations. Recent work addresses these shortcomings by constructing a formal Riemannian tangent space and a metric tensor on the space of probability measures that quadratically approximates the Sinkhorn divergence. In this work, we extend this framework with two major threads of contributions. For a suitable class of finite-smoothness cost functions, we prove Hadamard differentiability of the Sinkhorn metric tensor and we derive the Levi-Civita covariant derivative in this geometry; we then use the covariant derivative to obtain the geodesic and parallel transport equations, each of which amount to an ODE on a fixed Reproducing Kernel Hilbert Space (RKHS) with smooth coefficients. Our second contribution is to linearize the solutions to the geodesic and parallel transport equations using standard tools from Banach space ODE theory. We show that under standard regularity conditions these linearizations imply $\sqrt{n}$-limiting Gaussian processes centered at population values for the plugin estimators of the exponential map, the logarithmic map, parallel transport and the induced Sinkhorn distance. Moreover, we show that the nonparametric bootstrap is consistent for all objects mentioned. To the best of our knowledge, these are the first $\sqrt{n}$--limit theorems and bootstrap consistency results for canonical geometric operations in a transport-based geometry on the space of probability measures.</summary>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.ST" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-27T01:44:09Z</published>
+    <arxiv:primary_category term="stat.ML"/>
+    <author>
+      <name>Tristan Luca Saidi</name>
+    </author>
+    <author>
+      <name>Florian Gunsilius</name>
+    </author>
+    <author>
+      <name>Gonzalo Mena</name>
+    </author>
+  </entry>
+</feed>
