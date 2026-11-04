@@ -1,0 +1,36 @@
+{
+  "n": 1536,
+  "axes": [
+    1.7,
+    0.8
+  ],
+  "g0": 0.48506748107430087,
+  "bias_coefficient": -0.32545935958807615,
+  "weighted_poisson_identity_error": 1.1102230246251565e-16,
+  "results": [
+    {
+      "epsilon": 0.005,
+      "metric": 0.4834324078213614,
+      "linear_bias": -0.3270146505878979,
+      "corrected_error": -7.77645499910884e-06,
+      "corrected_error_over_epsilon2": -0.3110581999643536,
+      "feasible_corrected_metric": 0.48503994014005714,
+      "feasible_corrected_error": -2.7540934243730497e-05,
+      "feasible_corrected_error_over_epsilon2": -1.1016373697492199,
+      "scaling_iterations": 18,
+      "scaling_residual": 8.881784197001252e-15
+    },
+    {
+      "epsilon": 0.0025,
+      "metric": 0.48425188392878854,
+      "linear_bias": -0.32623885820493026,
+      "corrected_error": -1.9487465421352823e-06,
+      "corrected_error_over_epsilon2": -0.31179944674164517,
+      "feasible_corrected_metric": 0.48506060068019624,
+      "feasible_corrected_error": -6.88039410462471e-06,
+      "feasible_corrected_error_over_epsilon2": -1.1008630567399535,
+      "scaling_iterations": 12,
+      "scaling_residual": 1.9761969838327786e-14
+    }
+  ]
+}

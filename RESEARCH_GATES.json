@@ -1,0 +1,187 @@
+{
+ "schemaVersion": "1.0",
+ "provenance": "Compiled 4 November 2026 for release 0.1.0-candidate from the dated formula-first prior-art search of 1 November 2026 (prior_art/), the priority and corpus checks of 4 November 2026 (prior_art/novelty_report.md addendum) and the reference retrieval for the bibliography. It documents the scrutiny performed, not historical priority. No new priority search was run at release preparation.",
+ "contributionMap": [
+  {
+   "claim": "Theorem 2.1 and Proposition 6.2: for fixed cost |x-y|^2 on a closed embedded manifold with smooth positive density, the Sinkhorn metric operator converges in operator norm to the inverse weighted Laplacian, with first correction -(eps/4) A^{-1} A_Q A^{-1}, Q the sum of squared shape operators.",
+   "unit": "statement",
+   "paperLocation": "Theorem 2.1, Sections 2 and 6",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "formula-first search: web search, arXiv, Crossref, Semantic Scholar-type citation chasing from Lavenant et al. 2025 and the diffusion-maps literature (prior_art/novelty_report.md Section 5)",
+     "query": "Sinkhorn Riemannian metric small regularisation limit; entropic optimal transport Hessian manifold; second fundamental form Gaussian kernel expansion; bistochastic kernel Laplacian convergence; circle Bessel fingerprint"
+    },
+    {
+     "date": "2026-11-04",
+     "corpus": "priority re-check of Guo (SSRN 2026; abstract only, full text HTTP 403), Liou-Lu (arXiv 2506.13238, read in full), Schubr author-posted heat-kernel Sinkhorn preprints; Evidence Press live feed (239 items) and earlier batch folders; GitHub issues and discussions (gh search)",
+     "query": "intrinsic extrinsic bias diffusion operators; Gaussian integral operators submanifolds; heat-kernel Sinkhorn metric bias; Sinkhorn metric curvature"
+    },
+    {
+     "date": "2026-11-04",
+     "corpus": "api.crossref.org, doi.org (DataCite CSL-JSON) and export.arxiv.org (refs/records/)",
+     "query": "registry records for every bibliography entry"
+    }
+   ],
+   "closestPriorWork": "Lavenant, Luckhardt, Mordant, Schmitzer and Tamanini 2025 (formal limit, made rigorous here); operator-level Gaussian expansions with extrinsic terms (Smolyanov-von Weizsacker-Wittich 2004; Liou-Lu 2025; Guo 2026, abstract only), credited; Schubr 2026 heat-kernel analogue with an intrinsic cost",
+   "verdict": "partially-known-cited"
+  },
+  {
+   "claim": "Theorem 2.4: quantified operator-norm rates O(eps^{1/2}) in L^2 and O(eps) from H^2 to L^2.",
+   "unit": "statement",
+   "paperLocation": "Theorem 2.4, Section 7",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "formula-first search: web search, arXiv, Crossref, Semantic Scholar-type citation chasing from Lavenant et al. 2025 and the diffusion-maps literature (prior_art/novelty_report.md Section 5)",
+     "query": "Sinkhorn Riemannian metric small regularisation limit; entropic optimal transport Hessian manifold; second fundamental form Gaussian kernel expansion; bistochastic kernel Laplacian convergence; circle Bessel fingerprint"
+    },
+    {
+     "date": "2026-11-04",
+     "corpus": "priority re-check of Guo (SSRN 2026; abstract only, full text HTTP 403), Liou-Lu (arXiv 2506.13238, read in full), Schubr author-posted heat-kernel Sinkhorn preprints; Evidence Press live feed (239 items) and earlier batch folders; GitHub issues and discussions (gh search)",
+     "query": "intrinsic extrinsic bias diffusion operators; Gaussian integral operators submanifolds; heat-kernel Sinkhorn metric bias; Sinkhorn metric curvature"
+    }
+   ],
+   "closestPriorWork": "Schubr 2026 proves an O(h) rate for a periodic heat-kernel cost; no fixed ambient-cost rate found",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Corollary 2.2 and Theorem 2.3: positive corrected metric and expansions along smooth density families.",
+   "unit": "statement",
+   "paperLocation": "Corollary 2.2, Theorem 2.3, Sections 6 and 8",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "formula-first search: web search, arXiv, Crossref, Semantic Scholar-type citation chasing from Lavenant et al. 2025 and the diffusion-maps literature (prior_art/novelty_report.md Section 5)",
+     "query": "Sinkhorn Riemannian metric small regularisation limit; entropic optimal transport Hessian manifold; second fundamental form Gaussian kernel expansion; bistochastic kernel Laplacian convergence; circle Bessel fingerprint"
+    },
+    {
+     "date": "2026-11-04",
+     "corpus": "priority re-check of Guo (SSRN 2026; abstract only, full text HTTP 403), Liou-Lu (arXiv 2506.13238, read in full), Schubr author-posted heat-kernel Sinkhorn preprints; Evidence Press live feed (239 items) and earlier batch folders; GitHub issues and discussions (gh search)",
+     "query": "intrinsic extrinsic bias diffusion operators; Gaussian integral operators submanifolds; heat-kernel Sinkhorn metric bias; Sinkhorn metric curvature"
+    }
+   ],
+   "closestPriorWork": "Schubr 2026 positive correction for the heat-kernel cost (different, intrinsic setting)",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Propositions 9.1, 9.2 and 10.1: exact spheres to second order, circle high-frequency obstruction, embedding dependence.",
+   "unit": "statement",
+   "paperLocation": "Sections 9 and 10",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "formula-first search: web search, arXiv, Crossref, Semantic Scholar-type citation chasing from Lavenant et al. 2025 and the diffusion-maps literature (prior_art/novelty_report.md Section 5)",
+     "query": "Sinkhorn Riemannian metric small regularisation limit; entropic optimal transport Hessian manifold; second fundamental form Gaussian kernel expansion; bistochastic kernel Laplacian convergence; circle Bessel fingerprint"
+    },
+    {
+     "date": "2026-11-04",
+     "corpus": "priority re-check of Guo (SSRN 2026; abstract only, full text HTTP 403), Liou-Lu (arXiv 2506.13238, read in full), Schubr author-posted heat-kernel Sinkhorn preprints; Evidence Press live feed (239 items) and earlier batch folders; GitHub issues and discussions (gh search)",
+     "query": "intrinsic extrinsic bias diffusion operators; Gaussian integral operators submanifolds; heat-kernel Sinkhorn metric bias; Sinkhorn metric curvature"
+    }
+   ],
+   "closestPriorWork": "Funk-Hecke formula and Bessel asymptotics (classical, credited); no Sinkhorn-metric statement found",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Method: residual estimate for positive-kernel scaling (Lemma 3.1) used to pass the exact Sinkhorn scaling and the singular resolvent.",
+   "unit": "method",
+   "paperLocation": "Lemma 3.1, Sections 3-6",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "formula-first search: web search, arXiv, Crossref, Semantic Scholar-type citation chasing from Lavenant et al. 2025 and the diffusion-maps literature (prior_art/novelty_report.md Section 5)",
+     "query": "Sinkhorn Riemannian metric small regularisation limit; entropic optimal transport Hessian manifold; second fundamental form Gaussian kernel expansion; bistochastic kernel Laplacian convergence; circle Bessel fingerprint"
+    }
+   ],
+   "closestPriorWork": "Bistochastic normalisation analyses (Marshall-Coifman 2019; Wormell-Reich 2021; Cheng-Landa 2024) use different arguments",
+   "verdict": "partially-known-cited"
+  }
+ ],
+ "sourcesReadInFull": [
+  {
+   "citation": "Lavenant, Luckhardt, Mordant, Schmitzer and Tamanini, The Riemannian geometry of Sinkhorn divergences, Ann. IHP C 43(5), 2025, doi 10.4171/AIHPC/165",
+   "usedFor": "Definition of the Sinkhorn metric and the formal small-regularisation limit",
+   "readWhat": "Definitions, Section 4.4 and related results",
+   "date": "2026-11-01",
+   "evidenceLocator": "manuscript Section 1; prior_art/source_inspection.md"
+  },
+  {
+   "citation": "Liou and Lu, Asymptotic expansion of the Gaussian integral operators on Riemannian submanifolds of R^n, arXiv:2506.13238",
+   "usedFor": "Operator-level extrinsic expansion credited",
+   "readWhat": "Full text",
+   "date": "2026-11-04",
+   "evidenceLocator": "manuscript Section 1; review/REVIEW_SUMMARY.md"
+  },
+  {
+   "citation": "Schubr, Leading bias and positive correction of heat-kernel Sinkhorn metrics, and Sharp convergence of heat-kernel Sinkhorn metrics (Luminary Research Archive, Edition 2, 2026)",
+   "usedFor": "Closest intrinsic-cost analogue, contrasted",
+   "readWhat": "Full text of both editions 2",
+   "date": "2026-11-04",
+   "evidenceLocator": "manuscript Section 1"
+  }
+ ],
+ "limitationTriage": [
+  {
+   "limitation": "Sharp O(eps) operator-norm rate on general manifolds is not proved (O(eps^{1/2}) proved; O(eps) holds numerically on the circle).",
+   "closingQuestion": "Does the L^2 operator-norm rate improve to O(eps)?",
+   "triedOrSearched": "Remark 7.2 isolates the intermediate-frequency obstruction; circle evidence in Section 9.5.",
+   "estimatedCost": "weeks",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "New research.",
+   "whyNotClosedNow": "Beyond the scope of this release."
+  },
+  {
+   "limitation": "Population densities only; no empirical-sample or joint sampling/regularisation rates.",
+   "closingQuestion": "What happens for empirical measures as n grows and eps shrinks?",
+   "triedOrSearched": "Stated as scope; Mordant-Xu treat finite supports.",
+   "estimatedCost": "weeks",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "New research.",
+   "whyNotClosedNow": "Beyond the scope of this release."
+  },
+  {
+   "limitation": "Closed manifolds, smooth positive densities; no boundaries, vanishing densities or global geodesic-distance convergence; the correction needs known curvature.",
+   "closingQuestion": "Do analogous expansions hold with boundaries or degenerate densities?",
+   "triedOrSearched": "Recorded as limits in Section 10.",
+   "estimatedCost": "weeks",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "New research.",
+   "whyNotClosedNow": "Beyond the scope of this release."
+  },
+  {
+   "limitation": "Numerical scripts could be silently disabled under python -O or accept a corrupted value.",
+   "closingQuestion": "Do the checks fail when an expected value is wrong, including under python -O?",
+   "triedOrSearched": "All checks are explicit (no assert); a corrupted circle first-order coefficient (-1/8 changed to -0.126) makes check_spheres_tori.py exit non-zero under -O (release gate negative control).",
+   "estimatedCost": "1 hour",
+   "decision": "CLOSED",
+   "cheap": true
+  },
+  {
+   "limitation": "Priority holds only within a bounded search; Guo (SSRN 2026) full text could not be read.",
+   "closingQuestion": "Does Guo or other work already state the inverse-metric coefficient?",
+   "triedOrSearched": "Abstract read; SSRN routes returned HTTP 403; no arXiv copy; operator-level expansions credited; no author enquiry.",
+   "estimatedCost": "days",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "Full text inaccessible; specialist review and correspondence are out of scope.",
+   "whyNotClosedNow": "Requires access to the full text or author enquiry."
+  }
+ ],
+ "extensionScout": {
+  "by": "Internal AI-assisted reviewers and the lead, 4 November 2026",
+  "date": "2026-11-04",
+  "proposals": [
+   "Quantified operator-norm rate",
+   "Exact sphere computation with proof",
+   "Embedding-dependence statement",
+   "Practical guidance (eps relative to 4R^2)"
+  ],
+  "actions": [
+   "Closed in the revision round: Theorem 2.4, Proposition 9.1, Proposition 10.1, practical notes; the sharp rate is recorded as open in Section 10"
+  ]
+ }
+}

@@ -1,0 +1,127 @@
+\begin{proposition}[Operator-norm convergence of the metric operator]
+\label{prop:operator-norm-convergence}
+Under the closed embedded-manifold and smooth positive-density
+assumptions of the main theorem, write
+\[
+ A=-\Delta_M-\nabla\log\rho\cdot\nabla,
+ \qquad G=A^{-1},\qquad
+ B_\varepsilon=
+   \frac{\varepsilon}{2}(I-P_\varepsilon^2)^{-1}P_\varepsilon,
+\]
+where inverses are taken on $\mathcal H=L^2_0(\mu)$.
+Then
+\[
+ \|B_\varepsilon-G\|_{\mathcal H\to\mathcal H}
+ \longrightarrow0.
+\]
+This assertion supplies no operator-norm rate or higher-order
+operator-norm expansion.
+\end{proposition}
+
+\begin{proof}
+We first strengthen the spectral-gap comparison to a quadratic-form
+bound by the weighted heat semigroup.  Put $\sigma=\sqrt\rho$.
+Multiplication by $\sigma$ is a unitary map from $L^2(\mu)$ to
+$L^2(\mathrm{vol}_M)$, under which
+\[
+ \sigma A\sigma^{-1}=-\Delta_M+V,
+ \qquad V=\frac{\Delta_M\sigma}{\sigma}.
+\]
+The smooth potential $V$ is bounded.  If $h_t$ is the ordinary heat
+kernel and $h_t^V$ is the kernel of $e^{-t(-\Delta_M+V)}$, the
+maximum principle gives
+\[
+ 0\le h_t^V(x,y)\le e^{t\|V_-\|_\infty}h_t(x,y).
+\]
+Consequently the $\mu$-kernel $q_t$ of $H_t=e^{-tA}$ satisfies
+\[
+ q_t(x,y)=\frac{h_t^V(x,y)}{\sigma(x)\sigma(y)}
+ \le C t^{-m/2}
+       \exp\!\left(-\frac{d_M(x,y)^2}{C_0t}\right)
+\]
+for sufficiently small $t>0$.  Here we used the usual small-time
+Gaussian upper bound on a compact closed manifold and the positive
+lower bound on $\sigma$.
+
+The already proved uniform scaling asymptotic gives
+$0<v_*\le v_\varepsilon(x)\le v^*<\infty$, where
+$v_\varepsilon=(\pi\varepsilon)^{m/4}u_\varepsilon$.
+The $\mu$-kernel of $P_\varepsilon$ is
+\[
+ k_\varepsilon(x,y)=
+ v_\varepsilon(x)v_\varepsilon(y)
+ (\pi\varepsilon)^{-m/2}e^{-|x-y|^2/\varepsilon}.
+\]
+Choose $t=\alpha\varepsilon$, with $\alpha=1/C_0$.
+Because $|x-y|\le d_M(x,y)$, the preceding bounds imply
+$k_\varepsilon(x,y)\ge c\,q_{\alpha\varepsilon}(x,y)$ for some
+$c>0$ independent of sufficiently small $\varepsilon$.
+Both kernels are symmetric Markov kernels with respect to $\mu$.
+Their Dirichlet-form representations therefore give, on
+$\mathcal H$,
+\[
+ I-P_\varepsilon\ \ge\ c(I-e^{-\alpha\varepsilon A}).
+\]
+Both operators are strictly positive and invertible on this
+mean-zero space.  Inversion reverses the positive-operator order;
+no commutativity between these two operators is required.  Moreover,
+the functional calculus of $P_\varepsilon$ gives
+\[
+ 0\le B_\varepsilon
+ =\frac{\varepsilon}{4}
+  \bigl[(I-P_\varepsilon)^{-1}-(I+P_\varepsilon)^{-1}\bigr]
+ \le\frac{\varepsilon}{4c}
+       (I-e^{-\alpha\varepsilon A})^{-1}.
+\]
+For $z>0$ one has $(1-e^{-z})^{-1}\le1+z^{-1}$.
+Applying this scalar inequality to the spectral calculus of $A$
+proves the compact-dominance estimate
+\begin{equation}
+\label{eq:compact-dominance}
+ 0\le B_\varepsilon
+ \le\frac1{4c\alpha}G+\frac{\varepsilon}{4c}I
+ \le C(G+\varepsilon I).
+\end{equation}
+
+Let $0<\lambda_1\le\lambda_2\le\cdots\to\infty$ be the
+eigenvalues of $A$ on $\mathcal H$, counted with multiplicity.
+Let $E_J$ project onto the first $J$ eigenfunctions and set
+$F_J=I-E_J$.  These eigenfunctions are smooth.  The previously
+proved convergence on smooth directions, together with finite
+dimensionality, gives
+\[
+ \|(B_\varepsilon-G)E_J\|\longrightarrow0
+ \quad\text{for each fixed }J.
+\]
+Writing $D_\varepsilon=B_\varepsilon-G$, self-adjointness and
+\[
+ D_\varepsilon
+ =D_\varepsilon E_J+E_JD_\varepsilon F_J
+   +F_JD_\varepsilon F_J
+\]
+yield
+\[
+ \|D_\varepsilon\|
+ \le2\|D_\varepsilon E_J\|
+      +\|F_JD_\varepsilon F_J\|.
+\]
+Indeed,
+$\|E_JD_\varepsilon F_J\|
+=\|F_JD_\varepsilon E_J\|\le\|D_\varepsilon E_J\|$.
+By \eqref{eq:compact-dominance},
+\[
+ \|F_JD_\varepsilon F_J\|
+ \le\|F_JB_\varepsilon F_J\|+\|F_JGF_J\|
+ \le C\varepsilon+\frac{C+1}{\lambda_{J+1}}.
+\]
+First let $\varepsilon\downarrow0$ for fixed $J$, and then let
+$J\to\infty$.  The resulting upper bound tends to zero, proving
+the proposition.
+\end{proof}
+
+\paragraph{Scope.}
+The compact-dominance and finite-dimensional projection argument is
+a general operator-theoretic device, not a separate novelty claim.
+The proposition strengthens strong convergence of $B_\varepsilon$
+to norm convergence. The subsequent uniform gradient lemma in the final manuscript also transfers norm convergence to the positive correction. The smooth-direction asymptotic expansion does not become an operator-norm expansion.  In particular it is
+consistent with the circle's order-$\varepsilon$ lower bound.

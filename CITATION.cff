@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "Please cite this versioned research candidate by its DOI."
+title: "Extrinsic curvature bias in the small-regularisation limit of Sinkhorn metrics"
+type: software
+authors:
+  - name: Anonymous
+version: 0.1.0-candidate
+doi: 10.5281/zenodo.23940148
+date-released: 2026-11-04
+repository-code: "https://github.com/ipitchford/sinkhorn-metric-curvature-bias"
+url: "https://evidencepress.org/releases/sinkhorn-metric-curvature-bias/"
+license:
+  - CC0-1.0
+  - MIT
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23940148
+    description: "Version DOI (0.1.0-candidate)"
+  - type: doi
+    value: 10.5281/zenodo.23940147
+    description: "Concept DOI (all versions)"
+keywords:
+  - Sinkhorn divergence
+  - entropic optimal transport
+  - Riemannian metric
+  - Wasserstein geometry
+  - shape operator
+  - extrinsic curvature
+abstract: "For a smooth positive density on a closed manifold embedded in Euclidean space with the fixed cost |x-y|^2, the Sinkhorn metric operator converges in operator norm to the inverse weighted Laplacian (rate O(eps^(1/2)) in L2 operator norm, O(eps) from H2 to L2), and the metric has the first correction -(eps/4) int <Q grad phi, grad phi> dmu with Q the sum of squared shape operators: a nonpositive, embedding-dependent bias (chord shorter than arc). A positive correction removes it; the expansions hold along smooth density families; spheres are solved exactly to second order; a circle high-frequency family rules out operator-norm rates better than O(eps). Operator-level curvature expansions are credited to prior work. Population densities only; unrefereed candidate; internal AI-assisted review only; scripts are floating-point checks. Text CC0-1.0; code MIT."

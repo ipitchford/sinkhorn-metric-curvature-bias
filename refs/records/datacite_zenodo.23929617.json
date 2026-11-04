@@ -1,0 +1,36 @@
+{
+  "type": "article",
+  "id": "https://doi.org/10.5281/zenodo.23929617",
+  "categories": [
+    "Sinkhorn algorithm",
+    "entropic optimal transport",
+    "Poincaré inequality",
+    "convergence rate",
+    "matrix scaling",
+    "iterative proportional fitting",
+    "relative entropy",
+    "mirror descent",
+    "Schrödinger bridge"
+  ],
+  "author": [
+    {
+      "family": "Anonymous"
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2026,
+        11,
+        3
+      ]
+    ]
+  },
+  "abstract": "Unrefereed research candidate. In one sentence: one Poincaré inequality on the source measure makes every full iteration of the exact continuous Sinkhorn algorithm shrink the entropic dual gap by the fixed factor CPL2/(CPL2+λ2), from the first step and for any target, so about (CPL2/λ2) log(1/ε) iterations suffice; the exponent 2 cannot be improved in general.\nSinkhorn's algorithm (matrix scaling, iterative proportional fitting) is the standard solver for entropy-regularised optimal transport; smaller regularisation λ approximates unregularised transport better but slows the algorithm. Here CP is the source Poincaré constant and L bounds the source gradients of the cost. Theorem 1 transfers a uniform curvature bound on the semidual objective into a global relative-entropy inequality; Theorem 2 gives the Poincaré rate; Theorem 3 and Corollary 4 extend it to unbounded costs with compactly supported targets, including quadratic or bilinear cost with Gaussian or exponential-tailed sources and point-cloud targets (L becomes the target's Chebyshev radius R), for every λ. Corollary 5 turns the curvature estimate of Chizat, Delalande and Vaškevičius (CDV) into a global factor C/(C+λ), about 1/λ iterations, in their bounded-density and log-concave settings. Theorem 6 shows that no exponent below 2 is possible for a fixed source; Proposition 7 attains order λ2 uniformly over a bounded Poincaré class, Proposition 8 shows no single fixed absolutely continuous source attains it, and Corollary 9 shows the λ2 exponent of the Talagrand-inequality rates is also sharp. A practical stopping certificate bounds the gap by (1 + B/λ2) times the observed dual increase. Remark 5.2 states a conjecture on the eventual factor.\nRelation to prior work: Chiarini, Conforti, Greco and Tamanini (CCGT) already obtained the same rational rate under the stronger Talagrand inequality and Hessian bounds; the gains here are the weaker inequality, first-derivative hypotheses, validity for every λ and bounded initial potential, unbounded costs with compact targets, and the sharpness results. The mirror-descent route from a reverse-entropy inequality to a linear rate is that of Aubin-Frankowski, Korba and Léger; the curvature estimate in Corollary 5 is CDV's. S. Di Marino announced λ2 rates under Poincaré inequalities on both marginals; those proofs could not be inspected, so priority for the exponent is uncertain.\nThe archive contains the manuscript (PDF and Markdown source), the proof outline, three floating-point check programmes with their outputs, a figure, earlier manuscript versions and diffs, the bibliography, the dated literature audit, a rating-free internal review summary, CI and SHA-256 sums. Assurance: written proofs; the scripts are floating-point checks of selected formulas, not proofs or interval certificates; internal AI-assisted review only (not peer review, independent reproduction or formal verification). Limits: exact algorithm on population (continuous) measures only, not empirical sources; unbounded targets with quadratic cost are not covered; constants are not sharp. Creator: Anonymous. Text and figures CC0-1.0; code MIT.",
+  "DOI": "10.5281/ZENODO.23929617",
+  "publisher": "Zenodo",
+  "title": "Curvature, relative entropy, and global Sinkhorn convergence",
+  "URL": "https://zenodo.org/doi/10.5281/zenodo.23929617",
+  "copyright": "Creative Commons Zero v1.0 Universal",
+  "version": "0.1.0-candidate"
+}

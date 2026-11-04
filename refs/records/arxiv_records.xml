@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/ziZ/2oHnBZDTwfiT+S2hGKHis6Q</id>
+  <title>arXiv Query: search_query=&amp;id_list=2405.04987,2609.14651,2610.02007,2610.39850,2506.13238,2507.06161,math/0409155,2312.14418,math/0608522&amp;start=0&amp;max_results=20</title>
+  <updated>2026-11-04T06:56:11Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=20&amp;id_list=2405.04987,2609.14651,2610.02007,2610.39850,2506.13238,2507.06161,math/0409155,2312.14418,math/0608522" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>20</opensearch:itemsPerPage>
+  <opensearch:totalResults>9</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/math/0608522v2</id>
+    <title>Graph Laplacians and their convergence on random neighborhood graphs</title>
+    <updated>2007-06-27T08:23:07Z</updated>
+    <link href="https://arxiv.org/abs/math/0608522v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/math/0608522v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  Given a sample from a probability measure with support on a submanifold in Euclidean space one can construct a neighborhood graph which can be seen as an approximation of the submanifold. The graph Laplacian of such a graph is used in several machine learning methods like semi-supervised learning, dimensionality reduction and clustering. In this paper we determine the pointwise limit of three different graph Laplacians used in the literature as the sample size increases and the neighborhood size approaches zero. We show that for a uniform measure on the submanifold all graph Laplacians have the same limit up to constants. However in the case of a non-uniform measure on the submanifold only the so called random walk graph Laplacian converges to the weighted Laplace-Beltrami operator.</summary>
+    <category term="math.ST" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2006-08-21T18:35:42Z</published>
+    <arxiv:comment>Improved presentation, typos corrected, to appear in JMLR</arxiv:comment>
+    <arxiv:primary_category term="math.ST"/>
+    <author>
+      <name>Matthias Hein</name>
+    </author>
+    <author>
+      <name>Jean-Yves Audibert</name>
+    </author>
+    <author>
+      <name>Ulrike von Luxburg</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.13238v1</id>
+    <title>Asymptotic Expansion of the Gaussian Integral Operators on Riemannian submanifolds of $\mathbb{R}^{n}$</title>
+    <updated>2025-06-16T08:38:28Z</updated>
+    <link href="https://arxiv.org/abs/2506.13238v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2506.13238v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The Gaussian integral operator arises naturally as a local Euclidean approximation of the heat semigroup on a Riemannian manifold and plays a pivotal role in the analysis of graph Laplacians, particularly within the frameworks of manifold learning and spectral graph theory. In this paper, we study the asymptotic behavior of the Gaussian integral operator on a smooth Riemannian submanifold \( M \subset \mathbb{R}^n \), focusing on its expansion as \( \varepsilon \to 0^+ \). Under the assumption that the input function is real analytic near a fixed point \( x \in M \), we derive a full asymptotic expansion of the operator and compute the first-order correction term explicitly in terms of the mean curvature vector and the scalar curvature of the submanifold. In particular, we apply our results to hypersurfaces in Euclidean space and investigate geometric conditions under which points exhibit \emph{equicurvature}.</summary>
+    <category term="math.DG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-06-16T08:38:28Z</published>
+    <arxiv:primary_category term="math.DG"/>
+    <author>
+      <name> Jia-Ming</name>
+      <arxiv:affiliation>Frank</arxiv:affiliation>
+    </author>
+    <author>
+      <name> Liou</name>
+    </author>
+    <author>
+      <name>Chi-Chien Lu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2312.14418v1</id>
+    <title>Sharp error estimates for target measure diffusion maps with applications to the committor problem</title>
+    <updated>2023-12-22T03:52:17Z</updated>
+    <link href="https://arxiv.org/abs/2312.14418v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2312.14418v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We obtain asymptotically sharp error estimates for the consistency error of the Target Measure Diffusion map (TMDmap) (Banisch et al. 2020), a variant of diffusion maps featuring importance sampling and hence allowing input data drawn from an arbitrary density. The derived error estimates include the bias error and the variance error. The resulting convergence rates are consistent with the approximation theory of graph Laplacians. The key novelty of our results lies in the explicit quantification of all the prefactors on leading-order terms. We also prove an error estimate for solutions of Dirichlet BVPs obtained using TMDmap, showing that the solution error is controlled by consistency error. We use these results to study an important application of TMDmap in the analysis of rare events in systems governed by overdamped Langevin dynamics using the framework of transition path theory (TPT). The cornerstone ingredient of TPT is the solution of the committor problem, a boundary value problem for the backward Kolmogorov PDE. Remarkably, we find that the TMDmap algorithm is particularly suited as a meshless solver to the committor problem due to the cancellation of several error terms in the prefactor formula. Furthermore, significant improvements in bias and variance errors occur when using a quasi-uniform sampling density. Our numerical experiments show that these improvements in accuracy are realizable in practice when using $δ$-nets as spatially uniform inputs to the TMDmap algorithm.</summary>
+    <category term="math.NA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-12-22T03:52:17Z</published>
+    <arxiv:primary_category term="math.NA"/>
+    <author>
+      <name>Shashank Sule</name>
+    </author>
+    <author>
+      <name>Luke Evans</name>
+    </author>
+    <author>
+      <name>Maria Cameron</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.02007v1</id>
+    <title>Approximation and computation of the geodesic Sinkhorn distance</title>
+    <updated>2026-10-01T16:35:39Z</updated>
+    <link href="https://arxiv.org/abs/2610.02007v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.02007v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In [H. Lavenant, J. Luckhardt, G. Mordant, B. Schmitzer, L. Tamanini, The Riemannian geometry of Sinkhorn divergences. Ann. Inst. H. Poincaré Anal. Non Linéaire 43 (2026)] we introduced a Riemannian metric $\mathsf{d}_S$ on the space of probability distributions obtained from entropic optimal transport, specifically from the Sinkhorn divergence $S_\varepsilon$. In the present work we discuss how to approximate and compute $\mathsf{d}_S$. Spatially, we prove Gromov--Hausdorff convergence of the metric and convergence of geodesics for increasingly fine Eulerian discretization of the base space. Temporally, we show $Γ$-convergence of the chain discretization $N \sum_{k=0}^{N-1} S_\varepsilon(μ_k, μ_{k+1})$ to the energy functional defining $\mathsf{d}_S$. We deduce and implement numerical schemes to compute approximations of $\mathsf{d}_S$.</summary>
+    <category term="math.NA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.MG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-01T16:35:39Z</published>
+    <arxiv:primary_category term="math.NA"/>
+    <author>
+      <name>Hugo Lavenant</name>
+    </author>
+    <author>
+      <name>Jonas Luckhardt</name>
+    </author>
+    <author>
+      <name>Bernhard Schmitzer</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2507.06161v2</id>
+    <title>Sinkhorn Normalization of Diffusion Kernels</title>
+    <updated>2026-05-29T08:48:24Z</updated>
+    <link href="https://arxiv.org/abs/2507.06161v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2507.06161v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Smoothing a signal based on local neighborhoods is a core operation in machine learning and geometry processing. On well-structured domains such as vector spaces and manifolds, the Laplace operator derived from differential geometry offers a principled approach to smoothing via heat diffusion, with strong theoretical guarantees. However, constructing such Laplacians requires a carefully defined domain structure, which is not always available. Most practitioners thus rely on simple convolution kernels and message-passing layers, which are biased against the boundaries of the domain. We bridge this gap by introducing a broad class of smoothing operators, derived from general similarity or adjacency matrices, and demonstrate that they can be normalized into diffusion-like operators that inherit desirable properties from Laplacians. Our approach relies on a symmetric variant of the Sinkhorn algorithm, which rescales positive smoothing operators to match the structural behavior of heat diffusion. This construction enables Laplacian-like smoothing and processing of irregular data such as point clouds, sparse voxel grids or mixture of Gaussians. We show that the resulting operators not only approximate heat diffusion but also retain spectral information from the Laplacian itself, with applications to shape analysis and matching.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-07-08T16:42:09Z</published>
+    <arxiv:comment>33 pages, 25 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Nathan Kessler</name>
+    </author>
+    <author>
+      <name>Robin Magnet</name>
+    </author>
+    <author>
+      <name>Jean Feydy</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2405.04987v2</id>
+    <title>The Riemannian geometry of Sinkhorn divergences</title>
+    <updated>2025-09-19T11:04:03Z</updated>
+    <link href="https://arxiv.org/abs/2405.04987v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2405.04987v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We propose a new metric between probability measures on a compact metric space that mirrors the Riemannian manifold-like structure of quadratic optimal transport but includes entropic regularization. Its metric tensor is given by the Hessian of the Sinkhorn divergence, a debiased variant of entropic optimal transport. We precisely identify the tangent space it induces, which turns out to be related to a Reproducing Kernel Hilbert Space (RKHS). As usual in Riemannian geometry, the distance is built by looking for shortest paths. We prove that our distance is geodesic, metrizes the weak-star topology, and is equivalent to a RKHS norm. Still it retains the geometric flavor of optimal transport: as a paradigmatic example, translations are geodesics for the quadratic cost on $\mathbb{R}^d$. We also show two negative results on the Sinkhorn divergence that may be of independent interest: that it is not jointly convex, and that its square root is not a distance because it fails to satisfy the triangle inequality.</summary>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.MG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-05-08T11:51:30Z</published>
+    <arxiv:comment>64 pages, 6 figures</arxiv:comment>
+    <arxiv:primary_category term="math.OC"/>
+    <author>
+      <name>Hugo Lavenant</name>
+    </author>
+    <author>
+      <name>Jonas Luckhardt</name>
+    </author>
+    <author>
+      <name>Gilles Mordant</name>
+    </author>
+    <author>
+      <name>Bernhard Schmitzer</name>
+    </author>
+    <author>
+      <name>Luca Tamanini</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.14651v1</id>
+    <title>Convergence of the Sinkhorn Riemannian metric for finitely supported measures</title>
+    <updated>2026-09-13T16:36:33Z</updated>
+    <link href="https://arxiv.org/abs/2609.14651v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.14651v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The Sinkhorn Riemannian metric characterizes the local behavior of the Sinkhorn divergence, a debiased version of entropy-regularized optimal transport. Although the Sinkhorn divergence is known to approximate the squared Wasserstein-2 distance as the regularization parameter $\varepsilon$ goes to $0$, the behavior of the Sinkhorn Riemannian metric as $\varepsilon\to 0$ remains largely open. To the best of our knowledge, the only existing argument is for measures with a density and is still a formal computation. In this work, we prove the convergence of the Sinkhorn Riemannian metric as $\varepsilon\to 0$ in the case of finitely supported measures undergoing horizontal perturbations. Under our assumptions, our techniques additionally allow us to prove the convergence of higher order derivatives of the Sinkhorn Riemannian metric, thereby ensuring the convergence of the associated Riemann curvature tensor and Christoffel symbols as $\varepsilon\to 0$. We also compare with the absolutely continuous setting and show where our approach fails for measures with a density.</summary>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-13T16:36:33Z</published>
+    <arxiv:primary_category term="math.OC"/>
+    <author>
+      <name>Gilles Mordant</name>
+    </author>
+    <author>
+      <name>Liane Xu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/math/0409155v3</id>
+    <title>Chernoff's Theorem and Discrete Time Approximations of Brownian Motion on Manifolds</title>
+    <updated>2005-09-15T12:22:35Z</updated>
+    <link href="https://arxiv.org/abs/math/0409155v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/math/0409155v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  Let (S(t)) be a one-parameter family S = (S(t)) of positive integral operators on a locally compact space L. For a possibly non-uniform partition of [0,1] define a measure on the path space C([0,1],L) by using a) S(dt) for the transition between cosecutive partition times of distance dt, and b) a suitable continuous interpolation scheme (e.g. Brownian bridges or geodesics). If necessary normalize to get a probability measure. We prove a version of Chernoff's theorem of semigroup theory and tighness results which together yield convergence in law of such measures as the partition gets finer. In particular let L be a closed smooth submanifold of a Riemannian manifold M. We prove convergence of Brownian motion on M, conditioned to visit L at all partition times, to a process on L whose law has a Radon-Nikodym density with repect to Brownian motion on L which contains scalar, mean and sectional curvature terms. Various approximation schemes for Brownian motion are also given. These results substantially extend earlier work by the authors and by Andersson and Driver.</summary>
+    <category term="math.PR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.FA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2004-09-09T10:11:31Z</published>
+    <arxiv:comment>35 pages, revised version for publication, more detailed exposition</arxiv:comment>
+    <arxiv:primary_category term="math.PR"/>
+    <author>
+      <name>O. G. Smolyanov</name>
+    </author>
+    <author>
+      <name>H. v. Weizsaecker</name>
+    </author>
+    <author>
+      <name>O. Wittich</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.39850v1</id>
+    <title>The information geometry of the Sinkhorn divergence on a Hilbert manifold</title>
+    <updated>2026-10-29T11:30:41Z</updated>
+    <link href="https://arxiv.org/abs/2610.39850v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.39850v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The Sinkhorn divergence, the debiased entropic optimal transport cost, determines a metric tensor on probability measures defined along curves, due to Lavenant et al. We construct a real-analytic Hilbert manifold of measures, the smooth stratum, on which this tensor is a weak Riemannian metric, and we continue Eguchi's construction of a geometry from a divergence to the third order. The stratum consists of the measures with a positive Sobolev density on a closed Riemannian manifold, and the strata form a scale whose intersection is the Fréchet manifold of smooth positive densities of Ay. Following it, we characterize the metric through the gradients of mean values: its cotangent form is a spectral reweighting of the Dirichlet form of a Markov chain, so the metric is of the same kind as the Fisher-Rao and the Otto metric, and on the stratum it is bounded by a multiple of the Fisher-Rao metric (but not conversely). At third order, the Sinkhorn divergence is self-dual: both connection forms of Eguchi's construction coincide with the Levi-Civita form of the metric, and the cubic tensor vanishes, as a consequence of the transposition symmetry of the transport problem. On every stratum, the Levi-Civita form is represented, so the stratum has a real-analytic Levi-Civita connection, which on the Fréchet manifold is the connection of Ay and Schwachhöfer.</summary>
+    <category term="math.ST" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IT" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-29T11:30:41Z</published>
+    <arxiv:primary_category term="math.ST"/>
+    <author>
+      <name>Paul Navas</name>
+    </author>
+  </entry>
+</feed>

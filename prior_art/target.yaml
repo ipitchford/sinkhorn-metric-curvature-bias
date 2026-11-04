@@ -1,0 +1,69 @@
+# Note added 4 November 2026: this target was frozen on 1 November 2026 and is kept as written.
+# The final manuscript supersedes 'no general quantitative operator-norm rate asserted':
+# Theorem 2.4 proves O(eps^{1/2}) in L2_0 operator norm and O(eps) from H^2 to L2; the sharp O(eps)
+# operator-norm rate is open. The operator-level extrinsic coefficient is credited to prior operator
+# expansions; the release claims only the inverse-metric (Sinkhorn metric) consequences.
+target_id: fixed_cost_sinkhorn_extrinsic_bias
+search_date: 2026-11-01
+intended_contribution_unit: theorem
+claim:
+  exact_statement: |
+    For every compact connected smooth embedded closed manifold M in R^D,
+    every smooth positive probability density rho, and every smooth rho-mean-zero h,
+    the exact Sinkhorn tensor for fixed cost |x-y|^2 and entropy epsilon satisfies
+    B_epsilon h = A^{-1}h - epsilon/4 A^{-1} A_Q A^{-1}h + O(epsilon^2),
+    where A=-rho^{-1}div(rho grad), A_Q=-rho^{-1}div(rho Q grad),
+    Q=sum_alpha S_alpha^2, and B_epsilon=epsilon/2 P_epsilon(I-P_epsilon^2)^{-1}.
+    On the full centred L2 space, B_epsilon converges to A^{-1} in operator norm,
+    with no general quantitative operator-norm rate asserted.
+    The expansion is uniform under each prescribed finite number of parameter
+    derivatives in compact smooth positive density families. The corrected tensor
+    Bhat_epsilon=B_epsilon+epsilon/4 B_epsilon A_Q B_epsilon defines a bounded
+    positive bilinear form on all centred L2 inputs, strictly positive on nonzero
+    directions. It satisfies norm(Bhat_epsilon-B_epsilon) <= C epsilon and
+    also converges to A^{-1} in L2 operator norm. It has O(epsilon^2)
+    error on each fixed smooth input. A unit-circle high-frequency sequence gives
+    corrected operator-norm error at least c epsilon along that sequence,
+    excluding any uniform O(epsilon^2) L2 operator-norm assertion.
+    Historical priority is not asserted.
+  exclusions:
+    - Boundaries, noncompact supports, vanishing or singular densities.
+    - Full L2 operator-norm second-order convergence.
+    - A general quantitative rate for either full L2 operator-norm limit.
+    - Unrestricted infinite-dimensional curvature or global distance convergence.
+source:
+  originating_reference: Lavenant et al., The Riemannian geometry of Sinkhorn divergences, Section 4.4 equation (35)
+  url: https://arxiv.org/abs/2405.04987
+normalisation:
+  indices: Fourier modes k in Z; shape operators indexed by a local normal orthonormal frame.
+  scaling: c=|x-y|^2; Gaussian covariance epsilon/2; heat convention h=epsilon/2 when H_h=exp(h Delta/2).
+  basis_order: Continuum operator; on the circle use Fourier modes 0,1,-1,2,-2,...
+  symmetries: [reversibility, positive_semidefiniteness, orthogonal_normal_frame_invariance]
+sequences:
+  - name: unit_circle_inverse_laplacian_eigenvalues
+    exact_values: ['1', '1/4', '1/9', '1/16', '1/25', '1/36']
+    natural_scalings: [reciprocals_are_squares]
+  - name: circle_second_kernel_coefficient_times_32
+    exact_values: ['-1', '8', '63', '224', '575', '1224']
+    natural_scalings: [k_squared_times_k_squared_minus_2]
+generating_functions:
+  - name: Bessel_Laurent_generating_function
+    expression: exp(kappa*(z+1/z)/2)=sum_k I_k(kappa)*z^k
+    variables: [kappa, z]
+matrices: []
+aliases:
+  analysis: [weighted_Poisson, inverse_graph_Laplacian, resolvent, Gaussian_operator_expansion]
+  probability: [reversible_Markov_kernel, odd_step_Green_operator, diffusion_approximation, ground_state_transform]
+  combinatorics: [weighted_walk_sum, square_sequence]
+  mathematical_physics: [short_time_heat_kernel, Weingarten_tensor, Bessel_convolution, extrinsic_curvature]
+  statistics_optimisation_ml: [Sinkhorn_information_matrix, natural_gradient, diffusion_maps, bistochastic_normalisation]
+known_invariants:
+  circle_spectrum: p_k=I_k(2R^2/epsilon)/I_0(2R^2/epsilon)
+  geometric_coefficient: Q_2-Q_1^2/2 has principal second-order coefficient sum_alpha S_alpha^2/16
+  bias_sign: nonpositive
+  high_frequency_obstruction: On the unit circle epsilon_n=4/n^2 and k=n give (bhat_epsilon_n,n-1/n^2)/epsilon_n -> 1/(4 sinh(1))-1/4 < 0.
+  compact_domination: 0 <= B_epsilon <= C(A^{-1}+epsilon I), together with strong convergence, gives qualitative operator-norm convergence.
+  correction_bound: The row-score conditional-variance estimate yields norm(grad B_epsilon)_{L2->L2} <= C, hence norm(Bhat_epsilon-B_epsilon) <= C epsilon.
+search_constraints:
+  primary_sources_only_for_technical_claims: true
+  databases_or_corpora: [arXiv, journal_sites, PMLR, NeurIPS, author_archives, SSRN_metadata, NIST_DLMF, OEIS, two_live_web_indexes]

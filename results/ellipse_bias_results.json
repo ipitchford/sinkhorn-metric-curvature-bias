@@ -1,0 +1,72 @@
+{
+  "n": 768,
+  "axes": [
+    1.7,
+    0.8
+  ],
+  "g0": 0.48506748107430087,
+  "bias_coefficient": -0.32545935958807615,
+  "weighted_poisson_identity_error": 1.1102230246251565e-16,
+  "results": [
+    {
+      "epsilon": 0.12,
+      "metric": 0.44247844785817114,
+      "linear_bias": -0.3549086101344144,
+      "corrected_error": -0.003533910065560586,
+      "corrected_error_over_epsilon2": -0.24541042121948514,
+      "feasible_corrected_metric": 0.47057018814189355,
+      "feasible_corrected_error": -0.014497292932407313,
+      "feasible_corrected_error_over_epsilon2": -1.0067564536393967,
+      "scaling_iterations": 35,
+      "scaling_residual": 1.8207657603852567e-14
+    },
+    {
+      "epsilon": 0.08,
+      "metric": 0.45730500091530757,
+      "linear_bias": -0.3470310019874162,
+      "corrected_error": -0.001725731391947205,
+      "corrected_error_over_epsilon2": -0.2696455299917508,
+      "feasible_corrected_metric": 0.47830413378501235,
+      "feasible_corrected_error": -0.006763347289288513,
+      "feasible_corrected_error_over_epsilon2": -1.05677301395133,
+      "scaling_iterations": 34,
+      "scaling_residual": 1.4432899320127035e-14
+    },
+    {
+      "epsilon": 0.04,
+      "metric": 0.4715780016694035,
+      "linear_bias": -0.3372369851224341,
+      "corrected_error": -0.0004711050213743184,
+      "corrected_error_over_epsilon2": -0.294440638358949,
+      "feasible_corrected_metric": 0.4833168690546243,
+      "feasible_corrected_error": -0.0017506120196765784,
+      "feasible_corrected_error_over_epsilon2": -1.0941325122978616,
+      "scaling_iterations": 31,
+      "scaling_residual": 1.5987211554602254e-14
+    },
+    {
+      "epsilon": 0.02,
+      "metric": 0.47843624515652594,
+      "linear_bias": -0.33156179588874624,
+      "corrected_error": -0.00012204872601340178,
+      "corrected_error_over_epsilon2": -0.30512181503350444,
+      "feasible_corrected_metric": 0.4846265134123535,
+      "feasible_corrected_error": -0.0004409676619473446,
+      "feasible_corrected_error_over_epsilon2": -1.1024191548683615,
+      "scaling_iterations": 28,
+      "scaling_residual": 9.547918011776346e-15
+    },
+    {
+      "epsilon": 0.01,
+      "metric": 0.4817819528228991,
+      "linear_bias": -0.32855282514017703,
+      "corrected_error": -3.0934655521008825e-05,
+      "corrected_error_over_epsilon2": -0.30934655521008825,
+      "feasible_corrected_metric": 0.48495721768375044,
+      "feasible_corrected_error": -0.00011026339055042467,
+      "feasible_corrected_error_over_epsilon2": -1.1026339055042467,
+      "scaling_iterations": 23,
+      "scaling_residual": 1.27675647831893e-14
+    }
+  ]
+}

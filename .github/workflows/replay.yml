@@ -1,0 +1,35 @@
+# SPDX-License-Identifier: MIT
+name: Replay
+on:
+  push:
+  pull_request:
+jobs:
+  checks:
+    name: Manifest and the seven check scripts on a copy (normal and -O)
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      OMP_NUM_THREADS: "1"
+      OPENBLAS_NUM_THREADS: "1"
+      MPLBACKEND: Agg
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check MANIFEST.sha256
+        run: sha256sum -c MANIFEST.sha256
+      - name: Install pinned packages
+        run: python -m pip install -r requirements.txt
+      - name: Checks on copies (normal and -O; every check exits non-zero on failure, no assert)
+        run: |
+          for M in normal opt; do
+            cp -R . "$RUNNER_TEMP/$M"; cd "$RUNNER_TEMP/$M"
+            F=""; if [ "$M" = opt ]; then F="-O"; fi
+            for s in sympy_sphere_coefficients check_spheres_tori check_torus_revolution check_ellipse_bias independent_circle_check independent_ellipse_check make_figures; do
+              echo "== $M $s"; python $F -I -B code/$s.py > "$RUNNER_TEMP/$M-$s.log" 2>&1 || { tail -40 "$RUNNER_TEMP/$M-$s.log"; exit 1; }
+            done
+            cd "$GITHUB_WORKSPACE"
+          done
+      - name: Working tree unchanged
+        run: test -z "$(git status --porcelain)"

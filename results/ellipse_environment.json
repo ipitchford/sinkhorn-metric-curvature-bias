@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-01",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "method": "Deterministic periodic trapezoidal quadrature, symmetric Gaussian Sinkhorn scaling, dense positive-definite solves, FFT derivative for computable correction",
+  "seed": "No randomness",
+  "density": "rho(theta) proportional to exp(0.35*cos(theta)+0.2*sin(2*theta)) relative to arc length",
+  "ellipse_axes": [
+    1.7,
+    0.8
+  ],
+  "potential": "phi(theta)=sin(theta)+0.3*cos(2*theta)",
+  "source_direction": "h=A phi, weighted mean removed to roundoff",
+  "grid_sizes": [
+    768,
+    1536
+  ],
+  "main_epsilons": [
+    0.12,
+    0.08,
+    0.04,
+    0.02,
+    0.01
+  ],
+  "refinement_epsilons": [
+    0.005,
+    0.0025
+  ],
+  "scaling_tolerance": 2e-14,
+  "threading": "Recommended OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1",
+  "interpretation": "Numerical consistency check of an analytic theorem; no empirical data or stochastic inference."
+}

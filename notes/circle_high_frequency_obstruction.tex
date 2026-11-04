@@ -1,0 +1,105 @@
+\begin{proposition}[High-frequency obstruction to uniform second-order correction]
+\label{prop:circle-high-frequency}
+Let $M$ be the circle of radius $R>0$, equipped with uniform probability
+measure, and let $A=-\Delta_M$.  Write $B_\varepsilon$ for the Sinkhorn
+metric operator associated with the fixed chordal squared-distance cost,
+and let
+\[
+ \widehat B_\varepsilon
+   =B_\varepsilon+
+     \frac{\varepsilon}{4R^2}B_\varepsilon A B_\varepsilon
+\]
+be its positive curvature correction.  For every $a>0$, set
+\[
+ x=\frac{a^2}{4R^2},\qquad
+ c_a=\frac14\left(\frac1x-\frac1{\sinh x}\right)>0.
+\]
+Then, on $L^2_0(M)$,
+\[
+ \liminf_{\varepsilon\downarrow0}
+  \frac{\|\widehat B_\varepsilon-A^{-1}\|_{L^2\to L^2}}{\varepsilon}
+ \ge c_a.
+\]
+The same lower bound holds with $B_\varepsilon$ in place of
+$\widehat B_\varepsilon$.  In particular, the corrected metric's
+$O(\varepsilon^2)$ expansion on fixed smooth directions cannot be
+strengthened to an $O(\varepsilon^2)$ operator-norm bound on all of
+$L^2_0(M)$.
+\end{proposition}
+
+\begin{proof}
+In angular coordinates, let $e_k(\theta)=\sqrt2\cos(k\theta)$ for
+$k\ge1$, so $\|e_k\|_{L^2}=1$ and $Ae_k=(k^2/R^2)e_k$.
+The Markov and metric eigenvalues are
+\[
+ p_{\varepsilon,k}=
+ \frac{I_k(2R^2/\varepsilon)}{I_0(2R^2/\varepsilon)},
+ \qquad
+ b_{\varepsilon,k}=
+ \frac{\varepsilon p_{\varepsilon,k}}
+      {2(1-p_{\varepsilon,k}^2)}.
+\]
+Choose integers $k_\varepsilon\ge1$ with
+$k_\varepsilon\sqrt\varepsilon\to a$, for example
+$k_\varepsilon=\lfloor a/\sqrt\varepsilon\rfloor$ for sufficiently
+small $\varepsilon$.  The integral representation of $I_k$, after
+the substitution $\theta=\sqrt\varepsilon z$, gives
+\[
+ p_{\varepsilon,k_\varepsilon}
+ =\frac{
+ \displaystyle\int_{-\pi/\sqrt\varepsilon}^{\pi/\sqrt\varepsilon}
+ e^{-\frac{2R^2}{\varepsilon}(1-\cos(\sqrt\varepsilon z))}
+ \cos(k_\varepsilon\sqrt\varepsilon z)\,dz}
+ {\displaystyle\int_{-\pi/\sqrt\varepsilon}^{\pi/\sqrt\varepsilon}
+ e^{-\frac{2R^2}{\varepsilon}(1-\cos(\sqrt\varepsilon z))}\,dz}.
+\]
+Extend both integrands by zero outside their integration intervals.
+Since $1-\cos\theta\ge2\theta^2/\pi^2$ for $|\theta|\le\pi$,
+their absolute values are bounded by the integrable function
+$\exp(-4R^2z^2/\pi^2)$.  The numerator integrand converges pointwise
+to $e^{-R^2z^2}\cos(az)$, and the denominator integrand converges
+to $e^{-R^2z^2}$.  Dominated convergence therefore yields the
+triangular-array limit
+\[
+ p_{\varepsilon,k_\varepsilon}\longrightarrow e^{-x},
+ \qquad
+ \frac{b_{\varepsilon,k_\varepsilon}}{\varepsilon}
+   \longrightarrow\beta_a:=\frac1{4\sinh x},
+ \qquad
+ \frac{R^2/k_\varepsilon^2}{\varepsilon}
+   \longrightarrow\frac1{4x}.
+\]
+On this Fourier mode the corrected eigenvalue is
+\[
+ \widehat b_{\varepsilon,k}
+   =b_{\varepsilon,k}
+     +\frac{\varepsilon k^2}{4R^4}b_{\varepsilon,k}^2.
+\]
+Because $k_\varepsilon^2\varepsilon\to a^2$ and
+$b_{\varepsilon,k_\varepsilon}=\varepsilon\beta_a+o(\varepsilon)$,
+the added term is
+$\varepsilon^2a^2\beta_a^2/(4R^4)+o(\varepsilon^2)$.
+Consequently
+\[
+ \frac{R^2/k_\varepsilon^2-
+       \widehat b_{\varepsilon,k_\varepsilon}}{\varepsilon}
+ \longrightarrow\frac1{4x}-\frac1{4\sinh x}=c_a>0,
+\]
+where strict positivity follows from $\sinh x>x$ for $x>0$.
+Testing the operator difference on the unit vector
+$e_{k_\varepsilon}$ proves the claim; omitting the correction gives
+the same limit.  The correction defines a bounded operator at each
+fixed $\varepsilon>0$, since the Gaussian integral operator is
+smoothing and its Fourier eigenvalues decay faster than every
+power of $k$.
+\end{proof}
+
+\paragraph{Interpretation.}
+The frequency scale $k\asymp\varepsilon^{-1/2}$ resolves the
+regularisation length.  These directions depend on $\varepsilon$;
+although each is smooth, their derivative norms diverge.  The lower
+bound is therefore consistent with second-order convergence for
+each fixed smooth direction and uniformly bounded smooth families.
+Taking $a=2R$ gives the explicit positive constant
+$c_a=(1-1/\sinh1)/4$.  This is a scope clarification, not a separate
+novelty claim.

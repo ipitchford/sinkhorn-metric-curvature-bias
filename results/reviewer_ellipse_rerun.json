@@ -1,0 +1,60 @@
+{
+  "n": 768,
+  "axes": [
+    1.7,
+    0.8
+  ],
+  "g0": 0.48506748107430087,
+  "bias_coefficient": -0.32545935958807615,
+  "weighted_poisson_identity_error": 1.1102230246251565e-16,
+  "results": [
+    {
+      "epsilon": 0.02,
+      "metric": 0.47843624515652594,
+      "linear_bias": -0.33156179588874624,
+      "corrected_error": -0.00012204872601340178,
+      "corrected_error_over_epsilon2": -0.30512181503350444,
+      "feasible_corrected_metric": 0.4846265134123535,
+      "feasible_corrected_error": -0.0004409676619473446,
+      "feasible_corrected_error_over_epsilon2": -1.1024191548683615,
+      "scaling_iterations": 28,
+      "scaling_residual": 9.547918011776346e-15
+    },
+    {
+      "epsilon": 0.01,
+      "metric": 0.4817819528228991,
+      "linear_bias": -0.32855282514017703,
+      "corrected_error": -3.0934655521008825e-05,
+      "corrected_error_over_epsilon2": -0.30934655521008825,
+      "feasible_corrected_metric": 0.48495721768375044,
+      "feasible_corrected_error": -0.00011026339055042467,
+      "feasible_corrected_error_over_epsilon2": -1.1026339055042467,
+      "scaling_iterations": 23,
+      "scaling_residual": 1.27675647831893e-14
+    },
+    {
+      "epsilon": 0.005,
+      "metric": 0.4834324078213584,
+      "linear_bias": -0.32701465058849744,
+      "corrected_error": -7.776455002106442e-06,
+      "corrected_error_over_epsilon2": -0.31105820008425766,
+      "feasible_corrected_metric": 0.48503994014005414,
+      "feasible_corrected_error": -2.75409342467281e-05,
+      "feasible_corrected_error_over_epsilon2": -1.101637369869124,
+      "scaling_iterations": 18,
+      "scaling_residual": 8.770761894538737e-15
+    },
+    {
+      "epsilon": 0.0025,
+      "metric": 0.4842518839287739,
+      "linear_bias": -0.32623885821079224,
+      "corrected_error": -1.9487465567902262e-06,
+      "corrected_error_over_epsilon2": -0.3117994490864362,
+      "feasible_corrected_metric": 0.48506060068018153,
+      "feasible_corrected_error": -6.880394119335165e-06,
+      "feasible_corrected_error_over_epsilon2": -1.1008630590936264,
+      "scaling_iterations": 12,
+      "scaling_residual": 1.9872992140790302e-14
+    }
+  ]
+}

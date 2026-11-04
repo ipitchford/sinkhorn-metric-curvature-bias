@@ -1,0 +1,17 @@
+{
+  "release_replay": {
+    "python": "3.11.14",
+    "platform": "macOS-27.2-arm64 (Apple silicon)",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8",
+    "mpmath": "1.3.0",
+    "sympy": "1.14.0",
+    "blas_threads": "OPENBLAS_NUM_THREADS=1"
+  },
+  "shipped_outputs": {
+    "results/*.json": "Produced by the revision with Python 3.12.14 (circle and ellipse scripts) and the same NumPy/SciPy/Matplotlib versions; results/ellipse_environment.json records the environment of the ellipse experiment."
+  },
+  "pdf_engine": "pdfTeX (TeX Live 2026, TinyTeX), two passes of pdflatex manuscript.tex",
+  "reproducibility": "Outputs reproduce to floating-point roundoff, not bit for bit across Python and BLAS builds. In the release replay (normal and -O) the symbolic sphere, sphere/torus and torus-of-revolution outputs were byte-identical; every other number agreed to a relative 1.4e-8 or better, apart from quantities that are themselves at roundoff level (scaling residuals and grid discrepancies below 1e-10, which differ at roundoff). The figures are regenerated with negligible pixel differences."
+}
